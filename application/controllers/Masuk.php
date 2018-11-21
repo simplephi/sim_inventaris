@@ -22,7 +22,7 @@ class Masuk extends CI_Controller {
 public function input() {
        $nmfile = "file_".time(); //nama file saya beri nama langsung dan diikuti fungsi time
        $config['upload_path'] = './assets/masuk/'; //path folder
-       $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp|pdf|doc|docx'; //type yang dapat diakses bisa anda sesuaikan
+       $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp|pdf|docx|doc|xls|xlsx'; //type yang dapat diakses bisa anda sesuaikan
        $config['max_size'] = '1024000'; //maksimum besar file 2M  
        $config['file_name'] = $nmfile; //nama yang terupload nantinya
       $this->load->library('upload', $config);
@@ -68,7 +68,7 @@ public function input() {
         //get data
         $nmfile = "file_".time(); //nama file saya beri nama langsung dan diikuti fungsi time
         $config['upload_path'] = './assets/masuk/'; //path folder
-        $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp|pdf|doc|docx'; //type yang dapat diakses bisa anda sesuaikan
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp|pdf|docx|doc|xls|xlsx'; //type yang dapat diakses bisa anda sesuaikan
         $config['max_size'] = '1024000'; //maksimum besar file 2M
         // $config['max_width']  = '1288'; //lebar maksimum 1288 px
         // $config['max_height']  = '768'; //tinggi maksimu 768 px
