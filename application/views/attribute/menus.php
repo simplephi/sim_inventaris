@@ -19,6 +19,14 @@
       </li>
 
       <!-- Konten -->
+      <li class=" treeview">
+                  <a href="#">
+                    <i class="fa fa-th-list"></i> <span>Surat</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
               <li>
                 <a href="<?php echo site_url('Masuk')?>">
                   <i class="fa fa-inbox"></i> <span>Surat Masuk</span>
@@ -33,7 +41,44 @@
                   </span>
                 </a>
                 </li>
-                <li class=" treeview">
+              </ul>
+            </li>
+            <li>
+                <a href="<?php echo site_url('Pegawai')?>">
+                  <i class="fa fa-circle-o"></i> <span>Data Pegawai</span>
+                  <span class="pull-right-container">
+                  </span>
+                </a>
+                </li>
+                <li>
+                <a href="<?php echo site_url('Kibb')?>">
+                  <i class="fa fa-circle-o"></i> <span>KIB B</span>
+                  <span class="pull-right-container">
+                  </span>
+                </a>
+                </li>
+                <li>
+                <a href="<?php echo site_url('Kibc')?>">
+                  <i class="fa fa-circle-o"></i> <span>KIB C</span>
+                  <span class="pull-right-container">
+                  </span>
+                </a>
+                </li>
+                <li>
+                <a href="<?php echo site_url('Kibd')?>">
+                  <i class="fa fa-circle-o"></i> <span>KIB D</span>
+                  <span class="pull-right-container">
+                  </span>
+                </a>
+                </li>
+                <li>
+                <a href="<?php echo site_url('Kibf')?>">
+                  <i class="fa fa-circle-o"></i> <span>KIB F</span>
+                  <span class="pull-right-container">
+                  </span>
+                </a>
+                </li>
+                <!-- <li class=" treeview">
                   <a href="#">
                     <i class="fa fa-th-list"></i> <span>Data Kompetensi</span>
                     <span class="pull-right-container">
@@ -135,7 +180,7 @@
                       <i class="fa fa-circle-o"></i> <span>Pengarsipan</span>
                     </a></li>
                   </ul>
-                </li>
+                </li> -->
                 <li class=" treeview">
                   <a href="#">
                     <i class="fa fa-th-list"></i> <span>Transportasi Darat</span>
@@ -379,6 +424,36 @@
                     </li>
                   </ul>
                 </li>
+                    <li class=" treeview">
+                  <a href="#">
+                    <i class="fa fa-th-list"></i> <span>Perusahaan ASDP</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="<?php echo site_url('Perusahaanasdp1')?>" >
+                        <i class="fa fa-circle-o"></i> <span>Milik Pemerintah</span>
+                      </a>
+                    </li>
+                    <li><a href="<?php echo site_url('Perusahaanasdp2')?>" >
+                      <i class="fa fa-circle-o"></i> <span>Milik Swasta</span>
+                    </a></li>
+                  </ul>
+                </li>
+                  </ul>
+                </li>
+            </ul>
+          </li>
+          <li class=" treeview">
+                  <a href="#">
+                    <i class="fa fa-th-list"></i> <span>Dermaga</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
                     <li><a href="<?php echo site_url('Dermaga')?>" >
                       <i class="fa fa-circle-o"></i> <span>Dermaga</span>
                     </a></li>
@@ -418,28 +493,8 @@
                     </a></li>
                   </ul>
                 </li>
-                    <li class=" treeview">
-                  <a href="#">
-                    <i class="fa fa-th-list"></i> <span>Perusahaan ASDP</span>
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="<?php echo site_url('Perusahaanasdp1')?>" >
-                        <i class="fa fa-circle-o"></i> <span>Milik Pemerintah</span>
-                      </a>
-                    </li>
-                    <li><a href="<?php echo site_url('Perusahaanasdp2')?>" >
-                      <i class="fa fa-circle-o"></i> <span>Milik Swasta</span>
-                    </a></li>
-                  </ul>
-                </li>
-                  </ul>
-                </li>
-            </ul>
-          </li>
+              </ul>
+            </li>
           <li class=" treeview">
                   <a href="#">
                     <i class="fa fa-th-list"></i> <span>Transportasi Laut</span>
