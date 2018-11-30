@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.14
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 21 Nov 2018 pada 14.51
--- Versi Server: 5.6.26
--- PHP Version: 5.6.12
+-- Generation Time: Nov 29, 2018 at 12:10 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanbarang1`
+-- Table structure for table `table_angkutanbarang1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanbarang1` (
+CREATE TABLE `table_angkutanbarang1` (
   `angkutanbarang1_id` int(11) NOT NULL,
   `angkutanbarang1_name` varchar(200) NOT NULL,
   `angkutanbarang1_input` varchar(200) NOT NULL,
@@ -39,10 +41,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanbarang1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanbarang2`
+-- Table structure for table `table_angkutanbarang2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanbarang2` (
+CREATE TABLE `table_angkutanbarang2` (
   `angkutanbarang2_id` int(11) NOT NULL,
   `angkutanbarang2_name` varchar(200) NOT NULL,
   `angkutanbarang2_input` varchar(200) NOT NULL,
@@ -55,10 +57,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanbarang2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanbarang3`
+-- Table structure for table `table_angkutanbarang3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanbarang3` (
+CREATE TABLE `table_angkutanbarang3` (
   `angkutanbarang3_id` int(11) NOT NULL,
   `angkutanbarang3_name` varchar(200) NOT NULL,
   `angkutanbarang3_input` varchar(200) NOT NULL,
@@ -71,10 +73,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanbarang3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanbarang4`
+-- Table structure for table `table_angkutanbarang4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanbarang4` (
+CREATE TABLE `table_angkutanbarang4` (
   `angkutanbarang4_id` int(11) NOT NULL,
   `angkutanbarang4_name` varchar(200) NOT NULL,
   `angkutanbarang4_input` varchar(200) NOT NULL,
@@ -87,10 +89,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanbarang4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum1`
+-- Table structure for table `table_angkutanumum1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum1` (
+CREATE TABLE `table_angkutanumum1` (
   `angkutanumum1_id` int(11) NOT NULL,
   `angkutanumum1_name` varchar(200) NOT NULL,
   `angkutanumum1_input` varchar(200) NOT NULL,
@@ -103,10 +105,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum2`
+-- Table structure for table `table_angkutanumum2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum2` (
+CREATE TABLE `table_angkutanumum2` (
   `angkutanumum2_id` int(11) NOT NULL,
   `angkutanumum2_name` varchar(200) NOT NULL,
   `angkutanumum2_input` varchar(200) NOT NULL,
@@ -119,10 +121,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum3`
+-- Table structure for table `table_angkutanumum3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum3` (
+CREATE TABLE `table_angkutanumum3` (
   `angkutanumum3_id` int(11) NOT NULL,
   `angkutanumum3_name` varchar(200) NOT NULL,
   `angkutanumum3_input` varchar(200) NOT NULL,
@@ -135,10 +137,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum4`
+-- Table structure for table `table_angkutanumum4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum4` (
+CREATE TABLE `table_angkutanumum4` (
   `angkutanumum4_id` int(11) NOT NULL,
   `angkutanumum4_name` varchar(200) NOT NULL,
   `angkutanumum4_input` varchar(200) NOT NULL,
@@ -151,10 +153,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum5`
+-- Table structure for table `table_angkutanumum5`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum5` (
+CREATE TABLE `table_angkutanumum5` (
   `angkutanumum5_id` int(11) NOT NULL,
   `angkutanumum5_name` varchar(200) NOT NULL,
   `angkutanumum5_input` varchar(200) NOT NULL,
@@ -167,10 +169,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum5` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum6`
+-- Table structure for table `table_angkutanumum6`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum6` (
+CREATE TABLE `table_angkutanumum6` (
   `angkutanumum6_id` int(11) NOT NULL,
   `angkutanumum6_name` varchar(200) NOT NULL,
   `angkutanumum6_input` varchar(200) NOT NULL,
@@ -183,10 +185,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum6` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum7`
+-- Table structure for table `table_angkutanumum7`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum7` (
+CREATE TABLE `table_angkutanumum7` (
   `angkutanumum7_id` int(11) NOT NULL,
   `angkutanumum7_name` varchar(200) NOT NULL,
   `angkutanumum7_input` varchar(200) NOT NULL,
@@ -199,10 +201,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum7` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_angkutanumum8`
+-- Table structure for table `table_angkutanumum8`
 --
 
-CREATE TABLE IF NOT EXISTS `table_angkutanumum8` (
+CREATE TABLE `table_angkutanumum8` (
   `angkutanumum8_id` int(11) NOT NULL,
   `angkutanumum8_name` varchar(200) NOT NULL,
   `angkutanumum8_input` varchar(200) NOT NULL,
@@ -215,10 +217,10 @@ CREATE TABLE IF NOT EXISTS `table_angkutanumum8` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_badanusaha1`
+-- Table structure for table `table_badanusaha1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_badanusaha1` (
+CREATE TABLE `table_badanusaha1` (
   `badanusaha1_id` int(11) NOT NULL,
   `badanusaha1_name` varchar(200) NOT NULL,
   `badanusaha1_input` varchar(200) NOT NULL,
@@ -231,10 +233,10 @@ CREATE TABLE IF NOT EXISTS `table_badanusaha1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_badanusaha2`
+-- Table structure for table `table_badanusaha2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_badanusaha2` (
+CREATE TABLE `table_badanusaha2` (
   `badanusaha2_id` int(11) NOT NULL,
   `badanusaha2_name` varchar(200) NOT NULL,
   `badanusaha2_input` varchar(200) NOT NULL,
@@ -247,10 +249,10 @@ CREATE TABLE IF NOT EXISTS `table_badanusaha2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_barang1`
+-- Table structure for table `table_barang1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_barang1` (
+CREATE TABLE `table_barang1` (
   `barang1_id` int(11) NOT NULL,
   `barang1_name` varchar(200) NOT NULL,
   `barang1_input` varchar(200) NOT NULL,
@@ -263,10 +265,10 @@ CREATE TABLE IF NOT EXISTS `table_barang1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_barang2`
+-- Table structure for table `table_barang2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_barang2` (
+CREATE TABLE `table_barang2` (
   `barang2_id` int(11) NOT NULL,
   `barang2_name` varchar(200) NOT NULL,
   `barang2_input` varchar(200) NOT NULL,
@@ -279,10 +281,10 @@ CREATE TABLE IF NOT EXISTS `table_barang2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_dermaga`
+-- Table structure for table `table_dermaga`
 --
 
-CREATE TABLE IF NOT EXISTS `table_dermaga` (
+CREATE TABLE `table_dermaga` (
   `dermaga_id` int(11) NOT NULL,
   `dermaga_name` varchar(200) NOT NULL,
   `dermaga_input` varchar(200) NOT NULL,
@@ -295,10 +297,10 @@ CREATE TABLE IF NOT EXISTS `table_dermaga` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_dermaga1`
+-- Table structure for table `table_dermaga1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_dermaga1` (
+CREATE TABLE `table_dermaga1` (
   `dermaga1_id` int(11) NOT NULL,
   `dermaga1_name` varchar(200) NOT NULL,
   `dermaga1_input` varchar(200) NOT NULL,
@@ -311,10 +313,10 @@ CREATE TABLE IF NOT EXISTS `table_dermaga1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_dermaga2`
+-- Table structure for table `table_dermaga2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_dermaga2` (
+CREATE TABLE `table_dermaga2` (
   `dermaga2_id` int(11) NOT NULL,
   `dermaga2_name` varchar(200) NOT NULL,
   `dermaga2_input` varchar(200) NOT NULL,
@@ -327,10 +329,10 @@ CREATE TABLE IF NOT EXISTS `table_dermaga2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_dermaga3`
+-- Table structure for table `table_dermaga3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_dermaga3` (
+CREATE TABLE `table_dermaga3` (
   `dermaga3_id` int(11) NOT NULL,
   `dermaga3_name` varchar(200) NOT NULL,
   `dermaga3_input` varchar(200) NOT NULL,
@@ -343,10 +345,10 @@ CREATE TABLE IF NOT EXISTS `table_dermaga3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_dermaga4`
+-- Table structure for table `table_dermaga4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_dermaga4` (
+CREATE TABLE `table_dermaga4` (
   `dermaga4_id` int(11) NOT NULL,
   `dermaga4_name` varchar(200) NOT NULL,
   `dermaga4_input` varchar(200) NOT NULL,
@@ -359,10 +361,10 @@ CREATE TABLE IF NOT EXISTS `table_dermaga4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_diklat1`
+-- Table structure for table `table_diklat1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_diklat1` (
+CREATE TABLE `table_diklat1` (
   `diklat1_id` int(11) NOT NULL,
   `diklat1_name` varchar(200) NOT NULL,
   `diklat1_desc` text NOT NULL,
@@ -372,10 +374,10 @@ CREATE TABLE IF NOT EXISTS `table_diklat1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_diklat2`
+-- Table structure for table `table_diklat2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_diklat2` (
+CREATE TABLE `table_diklat2` (
   `diklat2_id` int(11) NOT NULL,
   `diklat2_name` varchar(200) NOT NULL,
   `diklat2_desc` text NOT NULL,
@@ -385,10 +387,10 @@ CREATE TABLE IF NOT EXISTS `table_diklat2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_diklat3`
+-- Table structure for table `table_diklat3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_diklat3` (
+CREATE TABLE `table_diklat3` (
   `diklat3_id` int(11) NOT NULL,
   `diklat3_name` varchar(200) NOT NULL,
   `diklat3_desc` text NOT NULL,
@@ -398,10 +400,10 @@ CREATE TABLE IF NOT EXISTS `table_diklat3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_diklat4`
+-- Table structure for table `table_diklat4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_diklat4` (
+CREATE TABLE `table_diklat4` (
   `diklat4_id` int(11) NOT NULL,
   `diklat4_name` varchar(200) NOT NULL,
   `diklat4_desc` text NOT NULL,
@@ -411,10 +413,10 @@ CREATE TABLE IF NOT EXISTS `table_diklat4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_fungsional1`
+-- Table structure for table `table_fungsional1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_fungsional1` (
+CREATE TABLE `table_fungsional1` (
   `fungsional1_id` int(11) NOT NULL,
   `fungsional1_name` varchar(200) NOT NULL,
   `fungsional1_desc` text NOT NULL,
@@ -424,10 +426,10 @@ CREATE TABLE IF NOT EXISTS `table_fungsional1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_fungsional2`
+-- Table structure for table `table_fungsional2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_fungsional2` (
+CREATE TABLE `table_fungsional2` (
   `fungsional2_id` int(11) NOT NULL,
   `fungsional2_name` varchar(200) NOT NULL,
   `fungsional2_desc` text NOT NULL,
@@ -437,10 +439,10 @@ CREATE TABLE IF NOT EXISTS `table_fungsional2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_fungsional3`
+-- Table structure for table `table_fungsional3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_fungsional3` (
+CREATE TABLE `table_fungsional3` (
   `fungsional3_id` int(11) NOT NULL,
   `fungsional3_name` varchar(200) NOT NULL,
   `fungsional3_desc` text NOT NULL,
@@ -450,17 +452,17 @@ CREATE TABLE IF NOT EXISTS `table_fungsional3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_groups`
+-- Table structure for table `table_groups`
 --
 
-CREATE TABLE IF NOT EXISTS `table_groups` (
+CREATE TABLE `table_groups` (
   `group_id` int(11) NOT NULL,
   `group_name` varchar(200) NOT NULL,
   `group_desc` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `table_groups`
+-- Dumping data for table `table_groups`
 --
 
 INSERT INTO `table_groups` (`group_id`, `group_name`, `group_desc`) VALUES
@@ -470,10 +472,10 @@ INSERT INTO `table_groups` (`group_id`, `group_name`, `group_desc`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jembatan1`
+-- Table structure for table `table_jembatan1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jembatan1` (
+CREATE TABLE `table_jembatan1` (
   `jembatan1_id` int(11) NOT NULL,
   `jembatan1_name` varchar(200) NOT NULL,
   `jembatan1_input` varchar(200) NOT NULL,
@@ -486,10 +488,10 @@ CREATE TABLE IF NOT EXISTS `table_jembatan1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jembatan2`
+-- Table structure for table `table_jembatan2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jembatan2` (
+CREATE TABLE `table_jembatan2` (
   `jembatan2_id` int(11) NOT NULL,
   `jembatan2_name` varchar(200) NOT NULL,
   `jembatan2_input` varchar(200) NOT NULL,
@@ -502,10 +504,10 @@ CREATE TABLE IF NOT EXISTS `table_jembatan2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis1`
+-- Table structure for table `table_jenis1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis1` (
+CREATE TABLE `table_jenis1` (
   `jenis1_id` int(11) NOT NULL,
   `jenis1_name` varchar(200) NOT NULL,
   `jenis1_input` varchar(200) NOT NULL,
@@ -518,10 +520,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis2`
+-- Table structure for table `table_jenis2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis2` (
+CREATE TABLE `table_jenis2` (
   `jenis2_id` int(11) NOT NULL,
   `jenis2_name` varchar(200) NOT NULL,
   `jenis2_input` varchar(200) NOT NULL,
@@ -534,10 +536,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis3`
+-- Table structure for table `table_jenis3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis3` (
+CREATE TABLE `table_jenis3` (
   `jenis3_id` int(11) NOT NULL,
   `jenis3_name` varchar(200) NOT NULL,
   `jenis3_input` varchar(200) NOT NULL,
@@ -550,10 +552,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis4`
+-- Table structure for table `table_jenis4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis4` (
+CREATE TABLE `table_jenis4` (
   `jenis4_id` int(11) NOT NULL,
   `jenis4_name` varchar(200) NOT NULL,
   `jenis4_input` varchar(200) NOT NULL,
@@ -566,10 +568,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis5`
+-- Table structure for table `table_jenis5`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis5` (
+CREATE TABLE `table_jenis5` (
   `jenis5_id` int(11) NOT NULL,
   `jenis5_name` varchar(200) NOT NULL,
   `jenis5_input` varchar(200) NOT NULL,
@@ -582,10 +584,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis5` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_jenis6`
+-- Table structure for table `table_jenis6`
 --
 
-CREATE TABLE IF NOT EXISTS `table_jenis6` (
+CREATE TABLE `table_jenis6` (
   `jenis6_id` int(11) NOT NULL,
   `jenis6_name` varchar(200) NOT NULL,
   `jenis6_input` varchar(200) NOT NULL,
@@ -598,10 +600,10 @@ CREATE TABLE IF NOT EXISTS `table_jenis6` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kapalbarang1`
+-- Table structure for table `table_kapalbarang1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kapalbarang1` (
+CREATE TABLE `table_kapalbarang1` (
   `kapalbarang1_id` int(11) NOT NULL,
   `kapalbarang1_name` varchar(200) NOT NULL,
   `kapalbarang1_input` varchar(200) NOT NULL,
@@ -614,10 +616,10 @@ CREATE TABLE IF NOT EXISTS `table_kapalbarang1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kapalbarang2`
+-- Table structure for table `table_kapalbarang2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kapalbarang2` (
+CREATE TABLE `table_kapalbarang2` (
   `kapalbarang2_id` int(11) NOT NULL,
   `kapalbarang2_name` varchar(200) NOT NULL,
   `kapalbarang2_input` varchar(200) NOT NULL,
@@ -630,10 +632,10 @@ CREATE TABLE IF NOT EXISTS `table_kapalbarang2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kapalpenumpang1`
+-- Table structure for table `table_kapalpenumpang1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kapalpenumpang1` (
+CREATE TABLE `table_kapalpenumpang1` (
   `kapalpenumpang1_id` int(11) NOT NULL,
   `kapalpenumpang1_name` varchar(200) NOT NULL,
   `kapalpenumpang1_input` varchar(200) NOT NULL,
@@ -646,10 +648,10 @@ CREATE TABLE IF NOT EXISTS `table_kapalpenumpang1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kapalpenumpang2`
+-- Table structure for table `table_kapalpenumpang2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kapalpenumpang2` (
+CREATE TABLE `table_kapalpenumpang2` (
   `kapalpenumpang2_id` int(11) NOT NULL,
   `kapalpenumpang2_name` varchar(200) NOT NULL,
   `kapalpenumpang2_input` varchar(200) NOT NULL,
@@ -662,10 +664,10 @@ CREATE TABLE IF NOT EXISTS `table_kapalpenumpang2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_keluar`
+-- Table structure for table `table_keluar`
 --
 
-CREATE TABLE IF NOT EXISTS `table_keluar` (
+CREATE TABLE `table_keluar` (
   `keluar_id` int(11) NOT NULL,
   `keluar_penerima` varchar(200) NOT NULL,
   `keluar_tanggal` date NOT NULL,
@@ -678,10 +680,10 @@ CREATE TABLE IF NOT EXISTS `table_keluar` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kendaraanpribadi1`
+-- Table structure for table `table_kendaraanpribadi1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kendaraanpribadi1` (
+CREATE TABLE `table_kendaraanpribadi1` (
   `kendaraanpribadi1_id` int(11) NOT NULL,
   `kendaraanpribadi1_name` varchar(200) NOT NULL,
   `kendaraanpribadi1_input` varchar(200) NOT NULL,
@@ -689,10 +691,10 @@ CREATE TABLE IF NOT EXISTS `table_kendaraanpribadi1` (
   `kendaraanpribadi1_satuan` varchar(200) NOT NULL,
   `kendaraanpribadi1_sumber` varchar(200) NOT NULL,
   `kendaraanpribadi1_file` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `table_kendaraanpribadi1`
+-- Dumping data for table `table_kendaraanpribadi1`
 --
 
 INSERT INTO `table_kendaraanpribadi1` (`kendaraanpribadi1_id`, `kendaraanpribadi1_name`, `kendaraanpribadi1_input`, `kendaraanpribadi1_verifikasi`, `kendaraanpribadi1_satuan`, `kendaraanpribadi1_sumber`, `kendaraanpribadi1_file`) VALUES
@@ -701,10 +703,10 @@ INSERT INTO `table_kendaraanpribadi1` (`kendaraanpribadi1_id`, `kendaraanpribadi
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kendaraanpribadi2`
+-- Table structure for table `table_kendaraanpribadi2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kendaraanpribadi2` (
+CREATE TABLE `table_kendaraanpribadi2` (
   `kendaraanpribadi2_id` int(11) NOT NULL,
   `kendaraanpribadi2_name` varchar(200) NOT NULL,
   `kendaraanpribadi2_input` varchar(200) NOT NULL,
@@ -717,18 +719,119 @@ CREATE TABLE IF NOT EXISTS `table_kendaraanpribadi2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi1`
+-- Table structure for table `table_kibb`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi1` (
+CREATE TABLE `table_kibb` (
+  `kibb_id` int(11) NOT NULL,
+  `kibb_kode` text NOT NULL,
+  `kibb_name` text NOT NULL,
+  `kibb_noreg` int(11) NOT NULL,
+  `kibb_type` text NOT NULL,
+  `kibb_cc` int(11) NOT NULL,
+  `kibb_bahan` text NOT NULL,
+  `kibb_tahun` varchar(4) NOT NULL,
+  `kibb_pabrik` text NOT NULL,
+  `kibb_rangka` text NOT NULL,
+  `kibb_mesin` text NOT NULL,
+  `kibb_polisi` text NOT NULL,
+  `kibb_bpkb` text NOT NULL,
+  `kibb_asal` text NOT NULL,
+  `kibb_harga` double NOT NULL,
+  `kibb_ket` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_kibc`
+--
+
+CREATE TABLE `table_kibc` (
+  `kibc_id` int(11) NOT NULL,
+  `kibc_name` text NOT NULL,
+  `kibc_kodeb` text NOT NULL,
+  `kibc_noreg` int(11) NOT NULL,
+  `kibc_bangunan` text NOT NULL,
+  `kibc_bertingkat` text NOT NULL,
+  `kibc_beton` text NOT NULL,
+  `kibc_lantai` int(11) NOT NULL,
+  `kibc_letak` text NOT NULL,
+  `kibc_tgldok` date NOT NULL,
+  `kibc_nodok` int(11) NOT NULL,
+  `kibc_luas` int(11) NOT NULL,
+  `kibc_status` text NOT NULL,
+  `kibc_kodet` text NOT NULL,
+  `kibc_asal` text NOT NULL,
+  `kibc_harga` double NOT NULL,
+  `kibc_ket` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_kibd`
+--
+
+CREATE TABLE `table_kibd` (
+  `kibd_id` int(11) NOT NULL,
+  `kibd_name` text NOT NULL,
+  `kibd_kodeb` text NOT NULL,
+  `kibd_noreg` int(11) NOT NULL,
+  `kibd_konstruksi` text NOT NULL,
+  `kibd_panjang` int(11) NOT NULL,
+  `kibd_lebar` int(11) NOT NULL,
+  `kibd_luas` int(11) NOT NULL,
+  `kibd_letak` text NOT NULL,
+  `kibd_tgldok` date NOT NULL,
+  `kibd_nodok` int(11) NOT NULL,
+  `kibd_status` text NOT NULL,
+  `kibd_kodet` text NOT NULL,
+  `kibd_asal` text NOT NULL,
+  `kibd_harga` double NOT NULL,
+  `kibd_bangunan` text NOT NULL,
+  `kibd_ket` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_kibf`
+--
+
+CREATE TABLE `table_kibf` (
+  `kibf_id` int(11) NOT NULL,
+  `kibf_name` varchar(200) NOT NULL,
+  `kibf_bangunan` text NOT NULL,
+  `kibf_bertingkat` text NOT NULL,
+  `kibf_beton` text NOT NULL,
+  `kibf_luas` text NOT NULL,
+  `kibf_letak` text NOT NULL,
+  `kibf_tgldok` date NOT NULL,
+  `kibf_nodok` text NOT NULL,
+  `kibf_tglmulai` date NOT NULL,
+  `kibf_status` text NOT NULL,
+  `kibf_kode` text NOT NULL,
+  `kibf_asal` text NOT NULL,
+  `kibf_nilai` text NOT NULL,
+  `kibf_ket` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_kompetensi1`
+--
+
+CREATE TABLE `table_kompetensi1` (
   `kompetensi1_id` int(11) NOT NULL,
   `kompetensi1_name` varchar(200) NOT NULL,
   `kompetensi1_desc` text NOT NULL,
   `kompetensi1_file` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `table_kompetensi1`
+-- Dumping data for table `table_kompetensi1`
 --
 
 INSERT INTO `table_kompetensi1` (`kompetensi1_id`, `kompetensi1_name`, `kompetensi1_desc`, `kompetensi1_file`) VALUES
@@ -737,10 +840,10 @@ INSERT INTO `table_kompetensi1` (`kompetensi1_id`, `kompetensi1_name`, `kompeten
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi2`
+-- Table structure for table `table_kompetensi2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi2` (
+CREATE TABLE `table_kompetensi2` (
   `kompetensi2_id` int(11) NOT NULL,
   `kompetensi2_name` varchar(200) NOT NULL,
   `kompetensi2_desc` text NOT NULL,
@@ -750,10 +853,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi3`
+-- Table structure for table `table_kompetensi3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi3` (
+CREATE TABLE `table_kompetensi3` (
   `kompetensi3_id` int(11) NOT NULL,
   `kompetensi3_name` varchar(200) NOT NULL,
   `kompetensi3_desc` text NOT NULL,
@@ -763,10 +866,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi4`
+-- Table structure for table `table_kompetensi4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi4` (
+CREATE TABLE `table_kompetensi4` (
   `kompetensi4_id` int(11) NOT NULL,
   `kompetensi4_name` varchar(200) NOT NULL,
   `kompetensi4_desc` text NOT NULL,
@@ -776,10 +879,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi5`
+-- Table structure for table `table_kompetensi5`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi5` (
+CREATE TABLE `table_kompetensi5` (
   `kompetensi5_id` int(11) NOT NULL,
   `kompetensi5_name` varchar(200) NOT NULL,
   `kompetensi5_desc` text NOT NULL,
@@ -789,10 +892,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi5` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi6`
+-- Table structure for table `table_kompetensi6`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi6` (
+CREATE TABLE `table_kompetensi6` (
   `kompetensi6_id` int(11) NOT NULL,
   `kompetensi6_name` varchar(200) NOT NULL,
   `kompetensi6_desc` text NOT NULL,
@@ -802,10 +905,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi6` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi7`
+-- Table structure for table `table_kompetensi7`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi7` (
+CREATE TABLE `table_kompetensi7` (
   `kompetensi7_id` int(11) NOT NULL,
   `kompetensi7_name` varchar(200) NOT NULL,
   `kompetensi7_desc` text NOT NULL,
@@ -815,10 +918,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi7` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi8`
+-- Table structure for table `table_kompetensi8`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi8` (
+CREATE TABLE `table_kompetensi8` (
   `kompetensi8_id` int(11) NOT NULL,
   `kompetensi8_name` varchar(200) NOT NULL,
   `kompetensi8_desc` text NOT NULL,
@@ -828,10 +931,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi8` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi9`
+-- Table structure for table `table_kompetensi9`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi9` (
+CREATE TABLE `table_kompetensi9` (
   `kompetensi9_id` int(11) NOT NULL,
   `kompetensi9_name` varchar(200) NOT NULL,
   `kompetensi9_desc` text NOT NULL,
@@ -841,10 +944,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi9` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi10`
+-- Table structure for table `table_kompetensi10`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi10` (
+CREATE TABLE `table_kompetensi10` (
   `kompetensi10_id` int(11) NOT NULL,
   `kompetensi10_name` varchar(200) NOT NULL,
   `kompetensi10_desc` text NOT NULL,
@@ -854,10 +957,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi10` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi11`
+-- Table structure for table `table_kompetensi11`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi11` (
+CREATE TABLE `table_kompetensi11` (
   `kompetensi11_id` int(11) NOT NULL,
   `kompetensi11_name` varchar(200) NOT NULL,
   `kompetensi11_desc` text NOT NULL,
@@ -867,10 +970,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi11` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi12`
+-- Table structure for table `table_kompetensi12`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi12` (
+CREATE TABLE `table_kompetensi12` (
   `kompetensi12_id` int(11) NOT NULL,
   `kompetensi12_name` varchar(200) NOT NULL,
   `kompetensi12_desc` text NOT NULL,
@@ -880,10 +983,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi12` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi13`
+-- Table structure for table `table_kompetensi13`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi13` (
+CREATE TABLE `table_kompetensi13` (
   `kompetensi13_id` int(11) NOT NULL,
   `kompetensi13_name` varchar(200) NOT NULL,
   `kompetensi13_desc` text NOT NULL,
@@ -893,10 +996,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi13` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_kompetensi14`
+-- Table structure for table `table_kompetensi14`
 --
 
-CREATE TABLE IF NOT EXISTS `table_kompetensi14` (
+CREATE TABLE `table_kompetensi14` (
   `kompetensi14_id` int(11) NOT NULL,
   `kompetensi14_name` varchar(200) NOT NULL,
   `kompetensi14_desc` text NOT NULL,
@@ -906,10 +1009,10 @@ CREATE TABLE IF NOT EXISTS `table_kompetensi14` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_masuk`
+-- Table structure for table `table_masuk`
 --
 
-CREATE TABLE IF NOT EXISTS `table_masuk` (
+CREATE TABLE `table_masuk` (
   `masuk_id` int(11) NOT NULL,
   `masuk_pengirim` varchar(200) NOT NULL,
   `masuk_tanggal` date NOT NULL,
@@ -922,10 +1025,10 @@ CREATE TABLE IF NOT EXISTS `table_masuk` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_modaasdp1`
+-- Table structure for table `table_modaasdp1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_modaasdp1` (
+CREATE TABLE `table_modaasdp1` (
   `modaasdp1_id` int(11) NOT NULL,
   `modaasdp1_name` varchar(200) NOT NULL,
   `modaasdp1_input` varchar(200) NOT NULL,
@@ -938,10 +1041,10 @@ CREATE TABLE IF NOT EXISTS `table_modaasdp1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_modaasdp2`
+-- Table structure for table `table_modaasdp2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_modaasdp2` (
+CREATE TABLE `table_modaasdp2` (
   `modaasdp2_id` int(11) NOT NULL,
   `modaasdp2_name` varchar(200) NOT NULL,
   `modaasdp2_input` varchar(200) NOT NULL,
@@ -954,10 +1057,10 @@ CREATE TABLE IF NOT EXISTS `table_modaasdp2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_modaasdp3`
+-- Table structure for table `table_modaasdp3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_modaasdp3` (
+CREATE TABLE `table_modaasdp3` (
   `modaasdp3_id` int(11) NOT NULL,
   `modaasdp3_name` varchar(200) NOT NULL,
   `modaasdp3_input` varchar(200) NOT NULL,
@@ -970,10 +1073,10 @@ CREATE TABLE IF NOT EXISTS `table_modaasdp3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_modaasdp4`
+-- Table structure for table `table_modaasdp4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_modaasdp4` (
+CREATE TABLE `table_modaasdp4` (
   `modaasdp4_id` int(11) NOT NULL,
   `modaasdp4_name` varchar(200) NOT NULL,
   `modaasdp4_input` varchar(200) NOT NULL,
@@ -986,10 +1089,10 @@ CREATE TABLE IF NOT EXISTS `table_modaasdp4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_modaasdp5`
+-- Table structure for table `table_modaasdp5`
 --
 
-CREATE TABLE IF NOT EXISTS `table_modaasdp5` (
+CREATE TABLE `table_modaasdp5` (
   `modaasdp5_id` int(11) NOT NULL,
   `modaasdp5_name` varchar(200) NOT NULL,
   `modaasdp5_input` varchar(200) NOT NULL,
@@ -1002,10 +1105,27 @@ CREATE TABLE IF NOT EXISTS `table_modaasdp5` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_pengujiankir`
+-- Table structure for table `table_pegawai`
 --
 
-CREATE TABLE IF NOT EXISTS `table_pengujiankir` (
+CREATE TABLE `table_pegawai` (
+  `pegawai_id` int(11) NOT NULL,
+  `pegawai_name` varchar(200) NOT NULL,
+  `pegawai_nip` varchar(200) NOT NULL,
+  `pegawai_gol` varchar(200) NOT NULL,
+  `pegawai_kompetensi` text NOT NULL,
+  `pegawai_formal` text NOT NULL,
+  `pegawai_fungsional` text NOT NULL,
+  `pegawai_file` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table_pengujiankir`
+--
+
+CREATE TABLE `table_pengujiankir` (
   `pengujiankir_id` int(11) NOT NULL,
   `pengujiankir_name` varchar(200) NOT NULL,
   `pengujiankir_input` varchar(200) NOT NULL,
@@ -1018,10 +1138,10 @@ CREATE TABLE IF NOT EXISTS `table_pengujiankir` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_pengumpan1`
+-- Table structure for table `table_pengumpan1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_pengumpan1` (
+CREATE TABLE `table_pengumpan1` (
   `pengumpan1_id` int(11) NOT NULL,
   `pengumpan1_name` varchar(200) NOT NULL,
   `pengumpan1_input` varchar(200) NOT NULL,
@@ -1034,10 +1154,10 @@ CREATE TABLE IF NOT EXISTS `table_pengumpan1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_pengumpan2`
+-- Table structure for table `table_pengumpan2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_pengumpan2` (
+CREATE TABLE `table_pengumpan2` (
   `pengumpan2_id` int(11) NOT NULL,
   `pengumpan2_name` varchar(200) NOT NULL,
   `pengumpan2_input` varchar(200) NOT NULL,
@@ -1050,10 +1170,10 @@ CREATE TABLE IF NOT EXISTS `table_pengumpan2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_pengumpan3`
+-- Table structure for table `table_pengumpan3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_pengumpan3` (
+CREATE TABLE `table_pengumpan3` (
   `pengumpan3_id` int(11) NOT NULL,
   `pengumpan3_name` varchar(200) NOT NULL,
   `pengumpan3_input` varchar(200) NOT NULL,
@@ -1066,10 +1186,10 @@ CREATE TABLE IF NOT EXISTS `table_pengumpan3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_pengumpan4`
+-- Table structure for table `table_pengumpan4`
 --
 
-CREATE TABLE IF NOT EXISTS `table_pengumpan4` (
+CREATE TABLE `table_pengumpan4` (
   `pengumpan4_id` int(11) NOT NULL,
   `pengumpan4_name` varchar(200) NOT NULL,
   `pengumpan4_input` varchar(200) NOT NULL,
@@ -1082,10 +1202,10 @@ CREATE TABLE IF NOT EXISTS `table_pengumpan4` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_penumpang1`
+-- Table structure for table `table_penumpang1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_penumpang1` (
+CREATE TABLE `table_penumpang1` (
   `penumpang1_id` int(11) NOT NULL,
   `penumpang1_name` varchar(200) NOT NULL,
   `penumpang1_input` varchar(200) NOT NULL,
@@ -1098,10 +1218,10 @@ CREATE TABLE IF NOT EXISTS `table_penumpang1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_penumpang2`
+-- Table structure for table `table_penumpang2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_penumpang2` (
+CREATE TABLE `table_penumpang2` (
   `penumpang2_id` int(11) NOT NULL,
   `penumpang2_name` int(11) NOT NULL,
   `penumpang2_input` int(11) NOT NULL,
@@ -1114,10 +1234,10 @@ CREATE TABLE IF NOT EXISTS `table_penumpang2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perintis1`
+-- Table structure for table `table_perintis1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perintis1` (
+CREATE TABLE `table_perintis1` (
   `perintis1_id` int(11) NOT NULL,
   `perintis1_name` varchar(200) NOT NULL,
   `perintis1_input` varchar(200) NOT NULL,
@@ -1130,10 +1250,10 @@ CREATE TABLE IF NOT EXISTS `table_perintis1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perintis2`
+-- Table structure for table `table_perintis2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perintis2` (
+CREATE TABLE `table_perintis2` (
   `perintis2_id` int(11) NOT NULL,
   `perintis2_name` varchar(200) NOT NULL,
   `perintis2_input` varchar(200) NOT NULL,
@@ -1146,10 +1266,10 @@ CREATE TABLE IF NOT EXISTS `table_perintis2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanasdp1`
+-- Table structure for table `table_perusahaanasdp1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanasdp1` (
+CREATE TABLE `table_perusahaanasdp1` (
   `perusahaanasdp1_id` int(11) NOT NULL,
   `perusahaanasdp1_name` varchar(200) NOT NULL,
   `perusahaanasdp1_input` varchar(200) NOT NULL,
@@ -1162,10 +1282,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanasdp1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanasdp2`
+-- Table structure for table `table_perusahaanasdp2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanasdp2` (
+CREATE TABLE `table_perusahaanasdp2` (
   `perusahaanasdp2_id` int(11) NOT NULL,
   `perusahaanasdp2_name` varchar(200) NOT NULL,
   `perusahaanasdp2_input` varchar(200) NOT NULL,
@@ -1178,10 +1298,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanasdp2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanlaut1`
+-- Table structure for table `table_perusahaanlaut1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanlaut1` (
+CREATE TABLE `table_perusahaanlaut1` (
   `perusahaanlaut1_id` int(11) NOT NULL,
   `perusahaanlaut1_name` varchar(200) NOT NULL,
   `perusahaanlaut1_input` varchar(200) NOT NULL,
@@ -1194,10 +1314,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanlaut1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanlaut2`
+-- Table structure for table `table_perusahaanlaut2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanlaut2` (
+CREATE TABLE `table_perusahaanlaut2` (
   `perusahaanlaut2_id` int(11) NOT NULL,
   `perusahaanlaut2_name` varchar(200) NOT NULL,
   `perusahaanlaut2_input` varchar(200) NOT NULL,
@@ -1210,10 +1330,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanlaut2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanumum1`
+-- Table structure for table `table_perusahaanumum1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanumum1` (
+CREATE TABLE `table_perusahaanumum1` (
   `perusahaanumum1_id` int(11) NOT NULL,
   `perusahaanumum1_name` varchar(200) NOT NULL,
   `perusahaanumum1_input` varchar(200) NOT NULL,
@@ -1226,10 +1346,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanumum1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_perusahaanumum2`
+-- Table structure for table `table_perusahaanumum2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_perusahaanumum2` (
+CREATE TABLE `table_perusahaanumum2` (
   `perusahaanumum2_id` int(11) NOT NULL,
   `perusahaanumum2_name` varchar(200) NOT NULL,
   `perusahaanumum2_input` varchar(200) NOT NULL,
@@ -1242,10 +1362,10 @@ CREATE TABLE IF NOT EXISTS `table_perusahaanumum2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_petikemas1`
+-- Table structure for table `table_petikemas1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_petikemas1` (
+CREATE TABLE `table_petikemas1` (
   `petikemas1_id` int(11) NOT NULL,
   `petikemas1_name` varchar(200) NOT NULL,
   `petikemas1_input` varchar(200) NOT NULL,
@@ -1258,10 +1378,10 @@ CREATE TABLE IF NOT EXISTS `table_petikemas1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_petikemas2`
+-- Table structure for table `table_petikemas2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_petikemas2` (
+CREATE TABLE `table_petikemas2` (
   `petikemas2_id` int(11) NOT NULL,
   `petikemas2_name` varchar(200) NOT NULL,
   `petikemas2_input` varchar(200) NOT NULL,
@@ -1274,10 +1394,10 @@ CREATE TABLE IF NOT EXISTS `table_petikemas2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_terminal1`
+-- Table structure for table `table_terminal1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_terminal1` (
+CREATE TABLE `table_terminal1` (
   `terminal1_id` int(11) NOT NULL,
   `terminal1_name` varchar(200) NOT NULL,
   `terminal1_input` varchar(200) NOT NULL,
@@ -1290,10 +1410,10 @@ CREATE TABLE IF NOT EXISTS `table_terminal1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_terminal2`
+-- Table structure for table `table_terminal2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_terminal2` (
+CREATE TABLE `table_terminal2` (
   `terminal2_id` int(11) NOT NULL,
   `terminal2_name` varchar(200) NOT NULL,
   `terminal2_input` varchar(200) NOT NULL,
@@ -1306,10 +1426,10 @@ CREATE TABLE IF NOT EXISTS `table_terminal2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_terminal3`
+-- Table structure for table `table_terminal3`
 --
 
-CREATE TABLE IF NOT EXISTS `table_terminal3` (
+CREATE TABLE `table_terminal3` (
   `terminal3_id` int(11) NOT NULL,
   `terminal3_name` varchar(200) NOT NULL,
   `terminal3_input` varchar(200) NOT NULL,
@@ -1322,10 +1442,10 @@ CREATE TABLE IF NOT EXISTS `table_terminal3` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_terminalpetikemas`
+-- Table structure for table `table_terminalpetikemas`
 --
 
-CREATE TABLE IF NOT EXISTS `table_terminalpetikemas` (
+CREATE TABLE `table_terminalpetikemas` (
   `terminalpetikemas_id` int(11) NOT NULL,
   `terminalpetikemas_name` varchar(200) NOT NULL,
   `terminalpetikemas_input` varchar(200) NOT NULL,
@@ -1338,10 +1458,10 @@ CREATE TABLE IF NOT EXISTS `table_terminalpetikemas` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipea1`
+-- Table structure for table `table_tipea1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipea1` (
+CREATE TABLE `table_tipea1` (
   `tipea1_id` int(11) NOT NULL,
   `tipea1_name` varchar(200) NOT NULL,
   `tipea1_input` varchar(200) NOT NULL,
@@ -1354,10 +1474,10 @@ CREATE TABLE IF NOT EXISTS `table_tipea1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipea2`
+-- Table structure for table `table_tipea2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipea2` (
+CREATE TABLE `table_tipea2` (
   `tipea2_id` int(11) NOT NULL,
   `tipea2_name` varchar(200) NOT NULL,
   `tipea2_input` varchar(200) NOT NULL,
@@ -1370,10 +1490,10 @@ CREATE TABLE IF NOT EXISTS `table_tipea2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipeb1`
+-- Table structure for table `table_tipeb1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipeb1` (
+CREATE TABLE `table_tipeb1` (
   `tipeb1_id` int(11) NOT NULL,
   `tipeb1_name` varchar(200) NOT NULL,
   `tipeb1_input` varchar(200) NOT NULL,
@@ -1386,10 +1506,10 @@ CREATE TABLE IF NOT EXISTS `table_tipeb1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipeb2`
+-- Table structure for table `table_tipeb2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipeb2` (
+CREATE TABLE `table_tipeb2` (
   `tipeb2_id` int(11) NOT NULL,
   `tipeb2_name` varchar(200) NOT NULL,
   `tipeb2_input` varchar(200) NOT NULL,
@@ -1402,10 +1522,10 @@ CREATE TABLE IF NOT EXISTS `table_tipeb2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipec1`
+-- Table structure for table `table_tipec1`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipec1` (
+CREATE TABLE `table_tipec1` (
   `tipec1_id` int(11) NOT NULL,
   `tipec1_name` varchar(200) NOT NULL,
   `tipec1_input` varchar(200) NOT NULL,
@@ -1418,10 +1538,10 @@ CREATE TABLE IF NOT EXISTS `table_tipec1` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_tipec2`
+-- Table structure for table `table_tipec2`
 --
 
-CREATE TABLE IF NOT EXISTS `table_tipec2` (
+CREATE TABLE `table_tipec2` (
   `tipec2_id` int(11) NOT NULL,
   `tipec2_name` varchar(200) NOT NULL,
   `tipec2_input` varchar(200) NOT NULL,
@@ -1434,19 +1554,19 @@ CREATE TABLE IF NOT EXISTS `table_tipec2` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `table_user`
+-- Table structure for table `table_user`
 --
 
-CREATE TABLE IF NOT EXISTS `table_user` (
+CREATE TABLE `table_user` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(100) NOT NULL,
   `user_password` varchar(200) NOT NULL,
   `user_fullname` varchar(255) NOT NULL,
   `group_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `table_user`
+-- Dumping data for table `table_user`
 --
 
 INSERT INTO `table_user` (`user_id`, `user_name`, `user_password`, `user_fullname`, `group_id`) VALUES
@@ -1722,6 +1842,30 @@ ALTER TABLE `table_kendaraanpribadi2`
   ADD PRIMARY KEY (`kendaraanpribadi2_id`);
 
 --
+-- Indexes for table `table_kibb`
+--
+ALTER TABLE `table_kibb`
+  ADD PRIMARY KEY (`kibb_id`);
+
+--
+-- Indexes for table `table_kibc`
+--
+ALTER TABLE `table_kibc`
+  ADD PRIMARY KEY (`kibc_id`);
+
+--
+-- Indexes for table `table_kibd`
+--
+ALTER TABLE `table_kibd`
+  ADD PRIMARY KEY (`kibd_id`);
+
+--
+-- Indexes for table `table_kibf`
+--
+ALTER TABLE `table_kibf`
+  ADD PRIMARY KEY (`kibf_id`);
+
+--
 -- Indexes for table `table_kompetensi1`
 --
 ALTER TABLE `table_kompetensi1`
@@ -1840,6 +1984,12 @@ ALTER TABLE `table_modaasdp4`
 --
 ALTER TABLE `table_modaasdp5`
   ADD PRIMARY KEY (`modaasdp5_id`);
+
+--
+-- Indexes for table `table_pegawai`
+--
+ALTER TABLE `table_pegawai`
+  ADD PRIMARY KEY (`pegawai_id`);
 
 --
 -- Indexes for table `table_pengujiankir`
@@ -2013,456 +2163,578 @@ ALTER TABLE `table_user`
 --
 ALTER TABLE `table_angkutanbarang1`
   MODIFY `angkutanbarang1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang2`
 --
 ALTER TABLE `table_angkutanbarang2`
   MODIFY `angkutanbarang2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang3`
 --
 ALTER TABLE `table_angkutanbarang3`
   MODIFY `angkutanbarang3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang4`
 --
 ALTER TABLE `table_angkutanbarang4`
   MODIFY `angkutanbarang4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum1`
 --
 ALTER TABLE `table_angkutanumum1`
   MODIFY `angkutanumum1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum2`
 --
 ALTER TABLE `table_angkutanumum2`
   MODIFY `angkutanumum2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum3`
 --
 ALTER TABLE `table_angkutanumum3`
   MODIFY `angkutanumum3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum4`
 --
 ALTER TABLE `table_angkutanumum4`
   MODIFY `angkutanumum4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum5`
 --
 ALTER TABLE `table_angkutanumum5`
   MODIFY `angkutanumum5_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum6`
 --
 ALTER TABLE `table_angkutanumum6`
   MODIFY `angkutanumum6_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum7`
 --
 ALTER TABLE `table_angkutanumum7`
   MODIFY `angkutanumum7_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_angkutanumum8`
 --
 ALTER TABLE `table_angkutanumum8`
   MODIFY `angkutanumum8_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_badanusaha1`
 --
 ALTER TABLE `table_badanusaha1`
   MODIFY `badanusaha1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_badanusaha2`
 --
 ALTER TABLE `table_badanusaha2`
   MODIFY `badanusaha2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_barang1`
 --
 ALTER TABLE `table_barang1`
   MODIFY `barang1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_barang2`
 --
 ALTER TABLE `table_barang2`
   MODIFY `barang2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_dermaga`
 --
 ALTER TABLE `table_dermaga`
   MODIFY `dermaga_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_dermaga1`
 --
 ALTER TABLE `table_dermaga1`
   MODIFY `dermaga1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_dermaga2`
 --
 ALTER TABLE `table_dermaga2`
   MODIFY `dermaga2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_dermaga3`
 --
 ALTER TABLE `table_dermaga3`
   MODIFY `dermaga3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_dermaga4`
 --
 ALTER TABLE `table_dermaga4`
   MODIFY `dermaga4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_diklat1`
 --
 ALTER TABLE `table_diklat1`
   MODIFY `diklat1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_diklat2`
 --
 ALTER TABLE `table_diklat2`
   MODIFY `diklat2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_diklat3`
 --
 ALTER TABLE `table_diklat3`
   MODIFY `diklat3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_diklat4`
 --
 ALTER TABLE `table_diklat4`
   MODIFY `diklat4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_fungsional1`
 --
 ALTER TABLE `table_fungsional1`
   MODIFY `fungsional1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_fungsional2`
 --
 ALTER TABLE `table_fungsional2`
   MODIFY `fungsional2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_fungsional3`
 --
 ALTER TABLE `table_fungsional3`
   MODIFY `fungsional3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_groups`
 --
 ALTER TABLE `table_groups`
-  MODIFY `group_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `table_jembatan1`
 --
 ALTER TABLE `table_jembatan1`
   MODIFY `jembatan1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jembatan2`
 --
 ALTER TABLE `table_jembatan2`
   MODIFY `jembatan2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis1`
 --
 ALTER TABLE `table_jenis1`
   MODIFY `jenis1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis2`
 --
 ALTER TABLE `table_jenis2`
   MODIFY `jenis2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis3`
 --
 ALTER TABLE `table_jenis3`
   MODIFY `jenis3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis4`
 --
 ALTER TABLE `table_jenis4`
   MODIFY `jenis4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis5`
 --
 ALTER TABLE `table_jenis5`
   MODIFY `jenis5_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_jenis6`
 --
 ALTER TABLE `table_jenis6`
   MODIFY `jenis6_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kapalbarang1`
 --
 ALTER TABLE `table_kapalbarang1`
   MODIFY `kapalbarang1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kapalbarang2`
 --
 ALTER TABLE `table_kapalbarang2`
   MODIFY `kapalbarang2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kapalpenumpang1`
 --
 ALTER TABLE `table_kapalpenumpang1`
   MODIFY `kapalpenumpang1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kapalpenumpang2`
 --
 ALTER TABLE `table_kapalpenumpang2`
   MODIFY `kapalpenumpang2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_keluar`
 --
 ALTER TABLE `table_keluar`
   MODIFY `keluar_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kendaraanpribadi1`
 --
 ALTER TABLE `table_kendaraanpribadi1`
-  MODIFY `kendaraanpribadi1_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `kendaraanpribadi1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `table_kendaraanpribadi2`
 --
 ALTER TABLE `table_kendaraanpribadi2`
   MODIFY `kendaraanpribadi2_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `table_kibb`
+--
+ALTER TABLE `table_kibb`
+  MODIFY `kibb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `table_kibc`
+--
+ALTER TABLE `table_kibc`
+  MODIFY `kibc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `table_kibd`
+--
+ALTER TABLE `table_kibd`
+  MODIFY `kibd_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `table_kibf`
+--
+ALTER TABLE `table_kibf`
+  MODIFY `kibf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi1`
 --
 ALTER TABLE `table_kompetensi1`
-  MODIFY `kompetensi1_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `kompetensi1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi2`
 --
 ALTER TABLE `table_kompetensi2`
   MODIFY `kompetensi2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi3`
 --
 ALTER TABLE `table_kompetensi3`
   MODIFY `kompetensi3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi4`
 --
 ALTER TABLE `table_kompetensi4`
   MODIFY `kompetensi4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi5`
 --
 ALTER TABLE `table_kompetensi5`
   MODIFY `kompetensi5_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi6`
 --
 ALTER TABLE `table_kompetensi6`
   MODIFY `kompetensi6_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi7`
 --
 ALTER TABLE `table_kompetensi7`
   MODIFY `kompetensi7_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi8`
 --
 ALTER TABLE `table_kompetensi8`
   MODIFY `kompetensi8_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi9`
 --
 ALTER TABLE `table_kompetensi9`
   MODIFY `kompetensi9_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi10`
 --
 ALTER TABLE `table_kompetensi10`
   MODIFY `kompetensi10_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi11`
 --
 ALTER TABLE `table_kompetensi11`
   MODIFY `kompetensi11_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi12`
 --
 ALTER TABLE `table_kompetensi12`
   MODIFY `kompetensi12_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi13`
 --
 ALTER TABLE `table_kompetensi13`
   MODIFY `kompetensi13_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_kompetensi14`
 --
 ALTER TABLE `table_kompetensi14`
   MODIFY `kompetensi14_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_masuk`
 --
 ALTER TABLE `table_masuk`
-  MODIFY `masuk_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `masuk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `table_modaasdp1`
 --
 ALTER TABLE `table_modaasdp1`
   MODIFY `modaasdp1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_modaasdp2`
 --
 ALTER TABLE `table_modaasdp2`
   MODIFY `modaasdp2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_modaasdp3`
 --
 ALTER TABLE `table_modaasdp3`
   MODIFY `modaasdp3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_modaasdp4`
 --
 ALTER TABLE `table_modaasdp4`
   MODIFY `modaasdp4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_modaasdp5`
 --
 ALTER TABLE `table_modaasdp5`
   MODIFY `modaasdp5_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `table_pegawai`
+--
+ALTER TABLE `table_pegawai`
+  MODIFY `pegawai_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_pengujiankir`
 --
 ALTER TABLE `table_pengujiankir`
   MODIFY `pengujiankir_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_pengumpan1`
 --
 ALTER TABLE `table_pengumpan1`
   MODIFY `pengumpan1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_pengumpan2`
 --
 ALTER TABLE `table_pengumpan2`
   MODIFY `pengumpan2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_pengumpan3`
 --
 ALTER TABLE `table_pengumpan3`
   MODIFY `pengumpan3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_pengumpan4`
 --
 ALTER TABLE `table_pengumpan4`
   MODIFY `pengumpan4_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_penumpang1`
 --
 ALTER TABLE `table_penumpang1`
   MODIFY `penumpang1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perintis1`
 --
 ALTER TABLE `table_perintis1`
   MODIFY `perintis1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perintis2`
 --
 ALTER TABLE `table_perintis2`
   MODIFY `perintis2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanasdp1`
 --
 ALTER TABLE `table_perusahaanasdp1`
   MODIFY `perusahaanasdp1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanasdp2`
 --
 ALTER TABLE `table_perusahaanasdp2`
   MODIFY `perusahaanasdp2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanlaut1`
 --
 ALTER TABLE `table_perusahaanlaut1`
   MODIFY `perusahaanlaut1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanlaut2`
 --
 ALTER TABLE `table_perusahaanlaut2`
   MODIFY `perusahaanlaut2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanumum1`
 --
 ALTER TABLE `table_perusahaanumum1`
   MODIFY `perusahaanumum1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_perusahaanumum2`
 --
 ALTER TABLE `table_perusahaanumum2`
   MODIFY `perusahaanumum2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_petikemas1`
 --
 ALTER TABLE `table_petikemas1`
   MODIFY `petikemas1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_petikemas2`
 --
 ALTER TABLE `table_petikemas2`
   MODIFY `petikemas2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_terminal1`
 --
 ALTER TABLE `table_terminal1`
   MODIFY `terminal1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_terminal2`
 --
 ALTER TABLE `table_terminal2`
   MODIFY `terminal2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_terminal3`
 --
 ALTER TABLE `table_terminal3`
   MODIFY `terminal3_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_terminalpetikemas`
 --
 ALTER TABLE `table_terminalpetikemas`
   MODIFY `terminalpetikemas_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipea1`
 --
 ALTER TABLE `table_tipea1`
   MODIFY `tipea1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipea2`
 --
 ALTER TABLE `table_tipea2`
   MODIFY `tipea2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipeb1`
 --
 ALTER TABLE `table_tipeb1`
   MODIFY `tipeb1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipeb2`
 --
 ALTER TABLE `table_tipeb2`
   MODIFY `tipeb2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipec1`
 --
 ALTER TABLE `table_tipec1`
   MODIFY `tipec1_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_tipec2`
 --
 ALTER TABLE `table_tipec2`
   MODIFY `tipec2_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `table_user`
 --
 ALTER TABLE `table_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
