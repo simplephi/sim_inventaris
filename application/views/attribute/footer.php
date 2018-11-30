@@ -227,15 +227,42 @@
 
 <script src="<?php echo  base_url();?>assets/date_picker_bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 <script src="<?php echo  base_url();?>assets/date_picker_bootstrap/js/locales/bootstrap-datetimepicker.id.js"charset="UTF-8"></script>
-<!-- <script type="text/javascript">
-            $(document).ready(function(){
+<!-- Select2 -->
+<script src="<?php echo  base_url();?>assets/select2/dist/js/select2.full.min.js"></script>
 
-                // Format mata uang.
-                $( '.sembarang' ).mask('0.000.000.000', {reverse: true});
+<script>
+$(document).ready(function() {
+    $('#kompetensi').select2();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#formal').select2();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#formal1').select2();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#fungsional').select2();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#fungsional1').select2();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#kompetensi1').select2();
+});
+</script>
 
-            })
-        </script> -->
-<script>$(document).ready(function() {
+<script>
+$(document).ready(function() {
     $(".sembarang").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||

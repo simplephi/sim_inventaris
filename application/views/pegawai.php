@@ -34,41 +34,41 @@
                   </div>
                   <div class="form-group">
                     <label for="password">Kompetensi</label>
-                              <select class="form-control" name="pegawai_kompetensi" required="required">
-                                  <option placeholder="Verifikasi"></option>
-                                  <option type = "text" name = "" value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
-                                  <option type = "text" name = "" value = "Manajemen Rekayasa Lalu Lintas">Manajemen Rekayasa Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Trafick Light">Trafick Light</option>
-                                  <option type = "text" name = "" value = "Pengelolaan Terminal">Pengelolaan Terminal</option>
-                                  <option type = "text" name = "" value = "Penyidik PNS">Penyidik PNS</option>
-                                  <option type = "text" name = "" value = "Analisa Data LLAJ">Analisa Data LLAJ</option>
-                                  <option type = "text" name = "" value = "Manajemen Angkutan Umum">Manajemen Angkutan Umum</option>
-                                  <option type = "text" name = "" value = "Manajemen Transportasi Perkotaan">Manajemen Transportasi Perkotaan</option>
-                                  <option type = "text" name = "" value = "Analisa Dampak Lalu Lintas">Analisa Dampak Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Pengawasan Lalu Lintas">Pengawasan Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Orientasi Lalu Lintas">Orientasi Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Parkir">Parkir</option>
-                                  <option type = "text" name = "" value = "Administrasi Keuangan">Administrasi Keuangan</option>
-                                  <option type = "text" name = "" value = "Administrasi Kepegawaian">Administrasi Kepegawaian</option>
+                              <select class="form-control" id="kompetensi" name="pegawai_kompetensi[]" multiple="multiple" style="width: 100%;" data-placeholder="Pilih" required="required">
+
+                                  <option value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
+                                  <option value = "Manajemen Rekayasa Lalu Lintas">Manajemen Rekayasa Lalu Lintas</option>
+                                  <option value = "Trafick Light">Trafick Light</option>
+                                  <option value = "Pengelolaan Terminal">Pengelolaan Terminal</option>
+                                  <option value = "Penyidik PNS">Penyidik PNS</option>
+                                  <option value = "Analisa Data LLAJ">Analisa Data LLAJ</option>
+                                  <option value = "Manajemen Angkutan Umum">Manajemen Angkutan Umum</option>
+                                  <option value = "Manajemen Transportasi Perkotaan">Manajemen Transportasi Perkotaan</option>
+                                  <option value = "Analisa Dampak Lalu Lintas">Analisa Dampak Lalu Lintas</option>
+                                  <option value = "Pengawasan Lalu Lintas">Pengawasan Lalu Lintas</option>
+                                  <option value = "Orientasi Lalu Lintas">Orientasi Lalu Lintas</option>
+                                  <option value = "Parkir">Parkir</option>
+                                  <option value = "Administrasi Keuangan">Administrasi Keuangan</option>
+                                  <option value = "Administrasi Kepegawaian">Administrasi Kepegawaian</option>
                               </select>
-                            </div>
+                  </div>
                   <div class="form-group">
                     <label for="password">Pendidikann Formal</label>
-                              <select class="form-control" name="pegawai_formal" required="required">
-                                  <option placeholder="Satuan"></option>
-                                  <option type = "text" name = "" value = "Diklat I">Diklat I</option>
-                                  <option type = "text" name = "" value = "Diklat II">Diklat II</option>
-                                  <option type = "text" name = "" value = "Diklat III">Diklat III</option>
-                                  <option type = "text" name = "" value = "Diklat IV">Diklat IV</option>
+                              <select class="form-control" id="formal" name="pegawai_formal[]" multiple="multiple" style="width: 100%;" data-placeholder="Pilih" required="required">
+
+                                  <option value = "Diklat I">Diklat I</option>
+                                  <option  value = "Diklat II">Diklat II</option>
+                                  <option value = "Diklat III">Diklat III</option>
+                                  <option  value = "Diklat IV">Diklat IV</option>
                               </select>
                             </div>
                             <div class="form-group">
                     <label for="password">Pendidikann Fungsional</label>
-                              <select class="form-control" name="pegawai_satuan" required="required">
-                                  <option placeholder="Satuan"></option>
-                                  <option type = "text" name = "" value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
-                                  <option type = "text" name = "" value = "Perencanaan">Perencanaan</option>
-                                  <option type = "text" name = "" value = "Pengarsipan">Pengarsipan</option>
+                              <select class="form-control" id="fungsional" name="pegawai_fungsional[]" multiple="multiple" style="width: 100%;" data-placeholder="Pilih" required="required">
+
+                                  <option value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
+                                  <option value = "Perencanaan">Perencanaan</option>
+                                  <option value = "Pengarsipan">Pengarsipan</option>
                               </select>
                             </div>
                   <div class="form-group">
@@ -158,43 +158,48 @@
                   </div>
                   <div class="form-group">
                     <label for="password">Kompetensi</label>
-                              <select class="form-control" name="pegawai_kompetensi" value='<?php echo $key->pegawai_kompetensi; ?>' required="required">
-                                  <option placeholder="Verifikasi"></option>
-                                  <option type = "text" name = "" value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
-                                  <option type = "text" name = "" value = "Manajemen Rekayasa Lalu Lintas">Manajemen Rekayasa Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Trafick Light">Trafick Light</option>
-                                  <option type = "text" name = "" value = "Pengelolaan Terminal">Pengelolaan Terminal</option>
-                                  <option type = "text" name = "" value = "Penyidik PNS">Penyidik PNS</option>
-                                  <option type = "text" name = "" value = "Analisa Data LLAJ">Analisa Data LLAJ</option>
-                                  <option type = "text" name = "" value = "Manajemen Angkutan Umum">Manajemen Angkutan Umum</option>
-                                  <option type = "text" name = "" value = "Manajemen Transportasi Perkotaan">Manajemen Transportasi Perkotaan</option>
-                                  <option type = "text" name = "" value = "Analisa Dampak Lalu Lintas">Analisa Dampak Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Pengawasan Lalu Lintas">Pengawasan Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Orientasi Lalu Lintas">Orientasi Lalu Lintas</option>
-                                  <option type = "text" name = "" value = "Parkir">Parkir</option>
-                                  <option type = "text" name = "" value = "Administrasi Keuangan">Administrasi Keuangan</option>
-                                  <option type = "text" name = "" value = "Administrasi Kepegawaian">Administrasi Kepegawaian</option>
-                              </select>
-                            </div>
+                    <?php
+                    $kompetensi=explode(',',$key->pegawai_kompetensi);
+                    //echo $kompetensi['0'];
+                    ?>
+
+                      <select class="form-control" name="pegawai_kompetensi[]" id="kompetensi1" multiple="multiple" style="width: 100%;" data-placeholder="Pilih" required="required">
+
+                          <option value = "Penguji Kendaraan Bermotor" <?php if($kompetensi['0']=='Penguji Kendaraan Bermotor') echo 'selected="selected"';?>>Penguji Kendaraan Bermotor</option>
+                          <option  value = "Manajemen Rekayasa Lalu Lintas" <?php if($kompetensi['0']=='Manajemen Rekayasa Lalu Lintas') echo 'selected="selected"';?>>Manajemen Rekayasa Lalu Lintas</option>
+                          <option  value = "Trafick Light" <?php if($kompetensi['0']=='Trafick Light') echo 'selected="selected"';?>>Trafick Light</option>
+                          <option value = "Pengelolaan Terminal" <?php if($kompetensi['0']=='Pengelolaan Terminal') echo 'selected="selected"';?>>Pengelolaan Terminal</option>
+                          <option  value = "Penyidik PNS" <?php if($kompetensi['0']=='Penyidik PNS') echo 'selected="selected"';?>>Penyidik PNS</option>
+                          <option  value = "Analisa Data LLAJ" <?php if($kompetensi['0']=='Analisa Data LLAJ') echo 'selected="selected"';?>>Analisa Data LLAJ</option>
+                          <option  value = "Manajemen Angkutan Umum"  <?php if($kompetensi['0']=='Manajemen Angkutan Umum') echo 'selected="selected"';?>>Manajemen Angkutan Umum</option>
+                          <option  value = "Manajemen Transportasi Perkotaan" <?php if($kompetensi['0']=='Manajemen Transportasi Perkotaan') echo 'selected="selected"';?>>Manajemen Transportasi Perkotaan</option>
+                          <option  value = "Analisa Dampak Lalu Lintas" <?php if($kompetensi['0']=='Analisa Dampak Lalu Lintas') echo 'selected="selected"';?>>Analisa Dampak Lalu Lintas</option>
+                          <option  value = "Pengawasan Lalu Lintas" <?php if($kompetensi['0']=='Pengawasan Lalu Lintas') echo 'selected="selected"';?>>Pengawasan Lalu Lintas</option>
+                          <option  value = "Orientasi Lalu Lintas" <?php if($kompetensi['0']=='Orientasi Lalu Lintas') echo 'selected="selected"';?>>Orientasi Lalu Lintas</option>
+                          <option  value = "Parkir" <?php if($kompetensi['0']=='Parkir') echo 'selected="selected"';?>>Parkir</option>
+                          <option  value = "Administrasi Keuangan" <?php if($kompetensi['0']=='Administrasi Keuangan') echo 'selected="selected"';?>>Administrasi Keuangan</option>
+                          <option value = "Administrasi Kepegawaian" <?php if($kompetensi['0']=='Administrasi Kepegawaian') echo 'selected="selected"';?>>Administrasi Kepegawaian</option>
+                      </select>
+                    </div>
                   <div class="form-group">
                     <label for="password">Pendidikann Formal</label>
-                              <select class="form-control" name="pegawai_formal" value='<?php echo $key->pegawai_formal; ?>' required="required">
-                                  <option placeholder="Satuan"></option>
-                                  <option type = "text" name = "" value = "Diklat I">Diklat I</option>
-                                  <option type = "text" name = "" value = "Diklat II">Diklat II</option>
-                                  <option type = "text" name = "" value = "Diklat III">Diklat III</option>
-                                  <option type = "text" name = "" value = "Diklat IV">Diklat IV</option>
+                              <select class="form-control" name="pegawai_formal[]" id="formal1" multiple="multiple" style="width: 100%;" data-placeholder="Pilih"  required="required">
+
+                                  <option value = "Diklat I">Diklat I</option>
+                                  <option value = "Diklat II">Diklat II</option>
+                                  <option value = "Diklat III">Diklat III</option>
+                                  <option  value = "Diklat IV">Diklat IV</option>
                               </select>
                             </div>
-                            <div class="form-group">
-                    <label for="password">Pendidikann Fungsional</label>
-                              <select class="form-control" value='<?php echo $key->pegawai_input; ?>' name="pegawai_fungsional" required="required">
-                                  <option placeholder="Satuan"></option>
-                                  <option type = "text" name = "" value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
-                                  <option type = "text" name = "" value = "Perencanaan">Perencanaan</option>
-                                  <option type = "text" name = "" value = "Pengarsipan">Pengarsipan</option>
-                              </select>
-                            </div>
+                    <div class="form-group">
+                      <label for="password">Pendidikann Fungsional</label>
+                                <select class="form-control" name="pegawai_fungsional[]" id="fungsional1" multiple="multiple" style="width: 100%;" data-placeholder="Pilih"  required="required">
+
+                                    <option value = "Penguji Kendaraan Bermotor">Penguji Kendaraan Bermotor</option>
+                                    <option value = "Perencanaan">Perencanaan</option>
+                                    <option value = "Pengarsipan">Pengarsipan</option>
+                                </select>
+                    </div>
                   <div class="form-group">
                     <label for="password">Foto</label>
                     <input type="file" class="form-control" id="password" placeholder="Foto" name="pegawai_file">

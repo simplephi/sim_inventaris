@@ -110,7 +110,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Kartu Inventaris Barang (KIB) F Konstruksi Dalam Pengerjaan</h3>
             </div><!-- /.box-header -->
-            <div class="box-body">
+            <div class="box-body table-responsive">
               <table class="table table-bordered table-striped" id="example1">
                 <thead>
                   <tr>

@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Halaman Admin</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/AdminLTE.min.css">
 
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/ionicons.min.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/jvectormap/jquery-jvectormap.css">
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/skins/_all-skins.min.css">
 
-  <link rel="stylesheet" href="<?php echo  base_url();?>assets/date_picker_bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/date_picker_bootstrap/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+  <!-- Select2 -->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/select2/dist/css/select2.min.css">
 
   <link href="<?php echo base_url();?>assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
 </head>
