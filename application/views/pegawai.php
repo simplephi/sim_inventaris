@@ -8,6 +8,9 @@
     <a href="<?php echo site_url('pegawai')?>" class="btn btn-white btn-success btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Refresh Page">
                           <i class="fa fa-refresh"></i>
                         </a>
+    <a href="<?php echo site_url('Pegawai/cetak')?>" class="btn btn-white btn-warning btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Cetak">
+                          <i class="fa fa-print"></i> Cetak
+                        </a>
       <!-- Modal Insert-->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -124,7 +127,7 @@
                     <td><?php echo $key->pegawai_kompetensi;?></td>
                     <td><?php echo $key->pegawai_formal;?></td>
                     <td><?php echo $key->pegawai_fungsional;?></td>
-          <td><a href="<?php echo base_url()?>assets/pegawai/<?php echo $key->pegawai_file;?>"><?php echo $key->pegawai_file;?></a></td>
+                    <td><a href="<?php echo base_url()?>assets/pegawai/<?php echo $key->pegawai_file;?>"><?php echo $key->pegawai_file;?></a></td>
                     <td>
 
                       <button type="button" class="btn btn-xs btn-success" title="Ubah Data" data-toggle="modal" data-target="#edit<?php echo $id;?>"><i class="fa fa-edit"></i></button>

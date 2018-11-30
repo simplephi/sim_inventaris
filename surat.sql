@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2018 at 12:10 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Generation Time: Nov 30, 2018 at 02:31 PM
+-- Server version: 5.7.14
+-- PHP Version: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -1119,6 +1117,14 @@ CREATE TABLE `table_pegawai` (
   `pegawai_file` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `table_pegawai`
+--
+
+INSERT INTO `table_pegawai` (`pegawai_id`, `pegawai_name`, `pegawai_nip`, `pegawai_gol`, `pegawai_kompetensi`, `pegawai_formal`, `pegawai_fungsional`, `pegawai_file`) VALUES
+(1, 'indraxx112', 'qwexx112', 'xx112', 'Analisa Dampak Lalu Lintas,Pengawasan Lalu Lintas,Administrasi Kepegawaian', 'Diklat I', 'Perencanaan', 'file_1543557644.jpg'),
+(3, 'xxx', 'xxxqqq', 'xxax', 'Manajemen Rekayasa Lalu Lintas', 'Diklat II', 'Penguji Kendaraan Bermotor', 'file_1543562986.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -2163,578 +2169,481 @@ ALTER TABLE `table_user`
 --
 ALTER TABLE `table_angkutanbarang1`
   MODIFY `angkutanbarang1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang2`
 --
 ALTER TABLE `table_angkutanbarang2`
   MODIFY `angkutanbarang2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang3`
 --
 ALTER TABLE `table_angkutanbarang3`
   MODIFY `angkutanbarang3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanbarang4`
 --
 ALTER TABLE `table_angkutanbarang4`
   MODIFY `angkutanbarang4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum1`
 --
 ALTER TABLE `table_angkutanumum1`
   MODIFY `angkutanumum1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum2`
 --
 ALTER TABLE `table_angkutanumum2`
   MODIFY `angkutanumum2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum3`
 --
 ALTER TABLE `table_angkutanumum3`
   MODIFY `angkutanumum3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum4`
 --
 ALTER TABLE `table_angkutanumum4`
   MODIFY `angkutanumum4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum5`
 --
 ALTER TABLE `table_angkutanumum5`
   MODIFY `angkutanumum5_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum6`
 --
 ALTER TABLE `table_angkutanumum6`
   MODIFY `angkutanumum6_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum7`
 --
 ALTER TABLE `table_angkutanumum7`
   MODIFY `angkutanumum7_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_angkutanumum8`
 --
 ALTER TABLE `table_angkutanumum8`
   MODIFY `angkutanumum8_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_badanusaha1`
 --
 ALTER TABLE `table_badanusaha1`
   MODIFY `badanusaha1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_badanusaha2`
 --
 ALTER TABLE `table_badanusaha2`
   MODIFY `badanusaha2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_barang1`
 --
 ALTER TABLE `table_barang1`
   MODIFY `barang1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_barang2`
 --
 ALTER TABLE `table_barang2`
   MODIFY `barang2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_dermaga`
 --
 ALTER TABLE `table_dermaga`
   MODIFY `dermaga_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_dermaga1`
 --
 ALTER TABLE `table_dermaga1`
   MODIFY `dermaga1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_dermaga2`
 --
 ALTER TABLE `table_dermaga2`
   MODIFY `dermaga2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_dermaga3`
 --
 ALTER TABLE `table_dermaga3`
   MODIFY `dermaga3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_dermaga4`
 --
 ALTER TABLE `table_dermaga4`
   MODIFY `dermaga4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_diklat1`
 --
 ALTER TABLE `table_diklat1`
   MODIFY `diklat1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_diklat2`
 --
 ALTER TABLE `table_diklat2`
   MODIFY `diklat2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_diklat3`
 --
 ALTER TABLE `table_diklat3`
   MODIFY `diklat3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_diklat4`
 --
 ALTER TABLE `table_diklat4`
   MODIFY `diklat4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_fungsional1`
 --
 ALTER TABLE `table_fungsional1`
   MODIFY `fungsional1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_fungsional2`
 --
 ALTER TABLE `table_fungsional2`
   MODIFY `fungsional2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_fungsional3`
 --
 ALTER TABLE `table_fungsional3`
   MODIFY `fungsional3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_groups`
 --
 ALTER TABLE `table_groups`
   MODIFY `group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `table_jembatan1`
 --
 ALTER TABLE `table_jembatan1`
   MODIFY `jembatan1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jembatan2`
 --
 ALTER TABLE `table_jembatan2`
   MODIFY `jembatan2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis1`
 --
 ALTER TABLE `table_jenis1`
   MODIFY `jenis1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis2`
 --
 ALTER TABLE `table_jenis2`
   MODIFY `jenis2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis3`
 --
 ALTER TABLE `table_jenis3`
   MODIFY `jenis3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis4`
 --
 ALTER TABLE `table_jenis4`
   MODIFY `jenis4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis5`
 --
 ALTER TABLE `table_jenis5`
   MODIFY `jenis5_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_jenis6`
 --
 ALTER TABLE `table_jenis6`
   MODIFY `jenis6_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kapalbarang1`
 --
 ALTER TABLE `table_kapalbarang1`
   MODIFY `kapalbarang1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kapalbarang2`
 --
 ALTER TABLE `table_kapalbarang2`
   MODIFY `kapalbarang2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kapalpenumpang1`
 --
 ALTER TABLE `table_kapalpenumpang1`
   MODIFY `kapalpenumpang1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kapalpenumpang2`
 --
 ALTER TABLE `table_kapalpenumpang2`
   MODIFY `kapalpenumpang2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_keluar`
 --
 ALTER TABLE `table_keluar`
   MODIFY `keluar_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kendaraanpribadi1`
 --
 ALTER TABLE `table_kendaraanpribadi1`
   MODIFY `kendaraanpribadi1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `table_kendaraanpribadi2`
 --
 ALTER TABLE `table_kendaraanpribadi2`
   MODIFY `kendaraanpribadi2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kibb`
 --
 ALTER TABLE `table_kibb`
   MODIFY `kibb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `table_kibc`
 --
 ALTER TABLE `table_kibc`
   MODIFY `kibc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `table_kibd`
 --
 ALTER TABLE `table_kibd`
   MODIFY `kibd_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `table_kibf`
 --
 ALTER TABLE `table_kibf`
   MODIFY `kibf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi1`
 --
 ALTER TABLE `table_kompetensi1`
   MODIFY `kompetensi1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi2`
 --
 ALTER TABLE `table_kompetensi2`
   MODIFY `kompetensi2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi3`
 --
 ALTER TABLE `table_kompetensi3`
   MODIFY `kompetensi3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi4`
 --
 ALTER TABLE `table_kompetensi4`
   MODIFY `kompetensi4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi5`
 --
 ALTER TABLE `table_kompetensi5`
   MODIFY `kompetensi5_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi6`
 --
 ALTER TABLE `table_kompetensi6`
   MODIFY `kompetensi6_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi7`
 --
 ALTER TABLE `table_kompetensi7`
   MODIFY `kompetensi7_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi8`
 --
 ALTER TABLE `table_kompetensi8`
   MODIFY `kompetensi8_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi9`
 --
 ALTER TABLE `table_kompetensi9`
   MODIFY `kompetensi9_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi10`
 --
 ALTER TABLE `table_kompetensi10`
   MODIFY `kompetensi10_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi11`
 --
 ALTER TABLE `table_kompetensi11`
   MODIFY `kompetensi11_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi12`
 --
 ALTER TABLE `table_kompetensi12`
   MODIFY `kompetensi12_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi13`
 --
 ALTER TABLE `table_kompetensi13`
   MODIFY `kompetensi13_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_kompetensi14`
 --
 ALTER TABLE `table_kompetensi14`
   MODIFY `kompetensi14_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_masuk`
 --
 ALTER TABLE `table_masuk`
   MODIFY `masuk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `table_modaasdp1`
 --
 ALTER TABLE `table_modaasdp1`
   MODIFY `modaasdp1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_modaasdp2`
 --
 ALTER TABLE `table_modaasdp2`
   MODIFY `modaasdp2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_modaasdp3`
 --
 ALTER TABLE `table_modaasdp3`
   MODIFY `modaasdp3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_modaasdp4`
 --
 ALTER TABLE `table_modaasdp4`
   MODIFY `modaasdp4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_modaasdp5`
 --
 ALTER TABLE `table_modaasdp5`
   MODIFY `modaasdp5_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_pegawai`
 --
 ALTER TABLE `table_pegawai`
-  MODIFY `pegawai_id` int(11) NOT NULL AUTO_INCREMENT;
-
+  MODIFY `pegawai_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `table_pengujiankir`
 --
 ALTER TABLE `table_pengujiankir`
   MODIFY `pengujiankir_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_pengumpan1`
 --
 ALTER TABLE `table_pengumpan1`
   MODIFY `pengumpan1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_pengumpan2`
 --
 ALTER TABLE `table_pengumpan2`
   MODIFY `pengumpan2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_pengumpan3`
 --
 ALTER TABLE `table_pengumpan3`
   MODIFY `pengumpan3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_pengumpan4`
 --
 ALTER TABLE `table_pengumpan4`
   MODIFY `pengumpan4_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_penumpang1`
 --
 ALTER TABLE `table_penumpang1`
   MODIFY `penumpang1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perintis1`
 --
 ALTER TABLE `table_perintis1`
   MODIFY `perintis1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perintis2`
 --
 ALTER TABLE `table_perintis2`
   MODIFY `perintis2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanasdp1`
 --
 ALTER TABLE `table_perusahaanasdp1`
   MODIFY `perusahaanasdp1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanasdp2`
 --
 ALTER TABLE `table_perusahaanasdp2`
   MODIFY `perusahaanasdp2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanlaut1`
 --
 ALTER TABLE `table_perusahaanlaut1`
   MODIFY `perusahaanlaut1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanlaut2`
 --
 ALTER TABLE `table_perusahaanlaut2`
   MODIFY `perusahaanlaut2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanumum1`
 --
 ALTER TABLE `table_perusahaanumum1`
   MODIFY `perusahaanumum1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_perusahaanumum2`
 --
 ALTER TABLE `table_perusahaanumum2`
   MODIFY `perusahaanumum2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_petikemas1`
 --
 ALTER TABLE `table_petikemas1`
   MODIFY `petikemas1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_petikemas2`
 --
 ALTER TABLE `table_petikemas2`
   MODIFY `petikemas2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_terminal1`
 --
 ALTER TABLE `table_terminal1`
   MODIFY `terminal1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_terminal2`
 --
 ALTER TABLE `table_terminal2`
   MODIFY `terminal2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_terminal3`
 --
 ALTER TABLE `table_terminal3`
   MODIFY `terminal3_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_terminalpetikemas`
 --
 ALTER TABLE `table_terminalpetikemas`
   MODIFY `terminalpetikemas_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipea1`
 --
 ALTER TABLE `table_tipea1`
   MODIFY `tipea1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipea2`
 --
 ALTER TABLE `table_tipea2`
   MODIFY `tipea2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipeb1`
 --
 ALTER TABLE `table_tipeb1`
   MODIFY `tipeb1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipeb2`
 --
 ALTER TABLE `table_tipeb2`
   MODIFY `tipeb2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipec1`
 --
 ALTER TABLE `table_tipec1`
   MODIFY `tipec1_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_tipec2`
 --
 ALTER TABLE `table_tipec2`
   MODIFY `tipec2_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `table_user`
 --
 ALTER TABLE `table_user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

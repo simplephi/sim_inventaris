@@ -138,5 +138,18 @@ public function input() {
         redirect('pegawai');
 
     }
+
+    public function cetak(){
+    ob_start();
+    $data['pegawai'] = $this->M_pegawai->tampil_data_pegawai();
+    $this->load->view('attribute/print', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+  }
 }
 ?>
