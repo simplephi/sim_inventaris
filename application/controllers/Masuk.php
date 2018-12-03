@@ -41,6 +41,7 @@ public function input() {
           'masuk_agenda' =>$this->input->post('masuk_agenda'),
           'masuk_nomor' =>$this->input->post('masuk_nomor'),
           'masuk_perihal' =>$this->input->post('masuk_perihal'),
+          'masuk_keterangan' =>$this->input->post('masuk_keterangan'),
                     );
                 $this->M_masuk->input($data);
             }
@@ -53,6 +54,7 @@ public function input() {
         $data['masuk_agenda'] = $this->input->post('masuk_agenda');
         $data['masuk_nomor'] = $this->input->post('masuk_nomor');
         $data['masuk_perihal'] = $this->input->post('masuk_perihal');
+        $data['masuk_keterangan'] = $this->input->post('masuk_keterangan');
         
 
         //call function
@@ -89,6 +91,7 @@ public function input() {
           'masuk_agenda' =>$this->input->post('masuk_agenda'),
           'masuk_nomor' =>$this->input->post('masuk_nomor'),
           'masuk_perihal' =>$this->input->post('masuk_perihal'),
+          'masuk_keterangan' =>$this->input->post('masuk_keterangan'),
                      );
                  $this->M_masuk->edit($data);
              }
@@ -103,6 +106,7 @@ public function input() {
         $data['masuk_nomor'] = $this->input->post('masuk_nomor');
         $data['masuk_perihal'] = $this->input->post('masuk_perihal');
         $data['masuk_berkas'] = $this->input->post('masuk_berkas');
+        $data['masuk_keterangan'] = $this->input->post('masuk_keterangan');
          //call function
          $this->M_masuk->edit($data);
          //redirect to page
@@ -118,5 +122,26 @@ public function input() {
         redirect('masuk');
 
     }
+    public function cetak(){
+    ob_start();
+    $data['masuk'] = $this->M_masuk->tampil_data_masuk();
+    $this->load->view('attribute/masuk', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data Surat Masuk.pdf', 'D');
+
+/*
+    Versi PHP 7.1
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
+  }
 }
 ?>

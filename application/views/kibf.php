@@ -8,6 +8,9 @@
     <a href="<?php echo site_url('kibf')?>" class="btn btn-white btn-success btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Refresh Page">
                           <i class="fa fa-refresh"></i>
                         </a>
+<a href="<?php echo site_url('Kibf/cetak')?>" class="btn btn-white btn-warning btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Cetak">
+                          <i class="fa fa-print"></i> Cetak
+                        </a>
       <!-- Modal Insert-->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">

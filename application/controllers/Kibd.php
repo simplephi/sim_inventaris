@@ -77,5 +77,26 @@ public function input() {
         redirect('kibd');
 
     }
+                    public function cetak(){
+    ob_start();
+    $data['kibd'] = $this->M_kibd->tampil_data_kibd();
+    $this->load->view('attribute/kibd', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data KIB D Jalan, Irigasi & Jaringan.pdf', 'D');
+
+/*
+    Versi PHP 7.1
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
+  }
 }
 ?>

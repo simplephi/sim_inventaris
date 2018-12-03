@@ -77,5 +77,27 @@ public function input() {
         redirect('kibc');
 
     }
+                    public function cetak(){
+    ob_start();
+    $data['kibc'] = $this->M_kibc->tampil_data_kibc();
+    $this->load->view('attribute/kibc', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data KIB C Gedung & Bangunan.pdf', 'D');
+
+/*
+    Versi PHP 7.1
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
+  }
+
 }
 ?>

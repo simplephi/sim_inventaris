@@ -33,9 +33,9 @@ public function input() {
 
        $this->upload->initialize($config);
 
-       $pegawai_kompetensi = implode(',',$this->input->post('pegawai_kompetensi'));
-       $pegawai_formal = implode(',',$this->input->post('pegawai_formal'));
-       $pegawai_fungsional = implode(',',$this->input->post('pegawai_fungsional'));
+       $pegawai_kompetensi = implode(', ',$this->input->post('pegawai_kompetensi'));
+       $pegawai_formal = implode(', ',$this->input->post('pegawai_formal'));
+       $pegawai_fungsional = implode(', ',$this->input->post('pegawai_fungsional'));
 
        if($_FILES['pegawai_file']['name'])
         {
@@ -48,6 +48,8 @@ public function input() {
                     'pegawai_name' =>$this->input->post('pegawai_name'),
                     'pegawai_nip' =>$this->input->post('pegawai_nip'),
                     'pegawai_gol' =>$this->input->post('pegawai_gol'),
+                    'pegawai_jabatan' =>$this->input->post('pegawai_jabatan'),
+                    'pegawai_pen' =>$this->input->post('pegawai_pen'),
                     'pegawai_kompetensi' =>$pegawai_kompetensi,
                     'pegawai_formal' =>$pegawai_formal,
                     'pegawai_fungsional' =>$pegawai_fungsional,
@@ -61,6 +63,8 @@ public function input() {
         $data['pegawai_name'] = $this->input->post('pegawai_name');
         $data['pegawai_nip'] = $this->input->post('pegawai_nip');
         $data['pegawai_gol'] = $this->input->post('pegawai_gol');
+        $data['pegawai_jabatan'] = $this->input->post('pegawai_jabatan');
+        $data['pegawai_pen'] = $this->input->post('pegawai_pen');
         $data['pegawai_kompetensi'] = $pegawai_kompetensi;
         $data['pegawai_formal'] = $pegawai_formal;
         $data['pegawai_fungsional'] = $pegawai_fungsional;
@@ -89,9 +93,9 @@ public function input() {
 
         $this->upload->initialize($config);
 
-        $pegawai_kompetensi = implode(',',$this->input->post('pegawai_kompetensi'));
-        $pegawai_formal = implode(',',$this->input->post('pegawai_formal'));
-        $pegawai_fungsional = implode(',',$this->input->post('pegawai_fungsional'));
+        $pegawai_kompetensi = implode(', ',$this->input->post('pegawai_kompetensi'));
+        $pegawai_formal = implode(', ',$this->input->post('pegawai_formal'));
+        $pegawai_fungsional = implode(', ',$this->input->post('pegawai_fungsional'));
 
         if($_FILES['pegawai_file']['name'])
          {
@@ -105,6 +109,8 @@ public function input() {
                   'pegawai_name' =>$this->input->post('pegawai_name'),
                   'pegawai_nip' =>$this->input->post('pegawai_nip'),
                   'pegawai_gol' =>$this->input->post('pegawai_gol'),
+                  'pegawai_jabatan' =>$this->input->post('pegawai_jabatan'),
+                  'pegawai_pen' =>$this->input->post('pegawai_pen'),
                   'pegawai_kompetensi' =>$pegawai_kompetensi,
                   'pegawai_formal' =>$pegawai_formal,
                   'pegawai_fungsional' =>$pegawai_fungsional,
@@ -119,6 +125,8 @@ public function input() {
          $data['pegawai_name'] = $this->input->post('pegawai_name');
         $data['pegawai_nip'] = $this->input->post('pegawai_nip');
         $data['pegawai_gol'] = $this->input->post('pegawai_gol');
+        $data['pegawai_jabatan'] = $this->input->post('pegawai_jabatan');
+        $data['pegawai_pen'] = $this->input->post('pegawai_pen');
         $data['pegawai_kompetensi'] = $pegawai_kompetensi;
         $data['pegawai_formal'] = $pegawai_formal;
         $data['pegawai_fungsional'] = $pegawai_fungsional;
@@ -147,9 +155,18 @@ public function input() {
         ob_end_clean();
 
         require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data Pegawai.pdf', 'D');
+
+/*
+    Versi PHP 7.1
     $pdf = new HTML2PDF('L','F4','en');
     $pdf->WriteHTML($html);
     $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
   }
 }
 ?>
