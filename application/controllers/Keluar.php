@@ -41,6 +41,7 @@ public function input() {
           'keluar_agenda' =>$this->input->post('keluar_agenda'),
           'keluar_nomor' =>$this->input->post('keluar_nomor'),
           'keluar_perihal' =>$this->input->post('keluar_perihal'),
+          'keluar_keterangan' =>$this->input->post('keluar_keterangan'),
                     );
                 $this->M_keluar->input($data);
             }
@@ -53,6 +54,7 @@ public function input() {
         $data['keluar_agenda'] = $this->input->post('keluar_agenda');
         $data['keluar_nomor'] = $this->input->post('keluar_nomor');
         $data['keluar_perihal'] = $this->input->post('keluar_perihal');
+        $data['keluar_keterangan'] = $this->input->post('keluar_keterangan');
         
 
         //call function
@@ -89,6 +91,7 @@ public function input() {
           'keluar_agenda' =>$this->input->post('keluar_agenda'),
           'keluar_nomor' =>$this->input->post('keluar_nomor'),
           'keluar_perihal' =>$this->input->post('keluar_perihal'),
+          'keluar_keterangan' =>$this->input->post('keluar_keterangan'),
                      );
                  $this->M_keluar->edit($data);
              }
@@ -103,6 +106,7 @@ public function input() {
         $data['keluar_nomor'] = $this->input->post('keluar_nomor');
         $data['keluar_perihal'] = $this->input->post('keluar_perihal');
         $data['keluar_berkas'] = $this->input->post('keluar_berkas');
+        $data['keluar_keterangan'] = $this->input->post('keluar_keterangan');
          //call function
          $this->M_keluar->edit($data);
          //redirect to page
@@ -118,5 +122,26 @@ public function input() {
         redirect('keluar');
 
     }
+        public function cetak(){
+    ob_start();
+    $data['keluar'] = $this->M_keluar->tampil_data_keluar();
+    $this->load->view('attribute/keluar', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data Surat Keluar.pdf', 'D');
+
+/*
+    Versi PHP 7.1
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
+  }
 }
 ?>

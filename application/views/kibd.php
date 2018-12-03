@@ -8,6 +8,9 @@
     <a href="<?php echo site_url('kibd')?>" class="btn btn-white btn-success btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Refresh Page">
                           <i class="fa fa-refresh"></i>
                         </a>
+    <a href="<?php echo site_url('Kibd/cetak')?>" class="btn btn-white btn-warning btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Cetak">
+                          <i class="fa fa-print"></i> Cetak
+                        </a>
       <!-- Modal Insert-->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -110,18 +113,18 @@
                     <th>Jenis Barang / Nama Barang</th>
                     <th>Kode Barang</th>
                     <th>Nomor Register</th>
-                    <th>Kondisi Bangunan (B, KB, RB)</th>
-                    <th>Bertingkat / Tidak</th>
-                    <th>Beton / Tidak</th>
-                    <th>Luas Lantai (M2)</th>
+                    <th>Konstruksi</th>
+                    <th>Panjang (Km)</th>
+                    <th>Lebar (M)</th>
+                    <th>Luas (M2)</th>
                     <th>Letak / Lokasi Alamat</th>
                     <th>Tanggal Dokumen Gedung</th>
                     <th>Nomor Dokumen Gedung</th>
-                    <th>Luas (M2)</th>
                     <th>Status Tanah</th>
                     <th>Nomor Kode Tanah</th>
                     <th>Asal-usul</th>
                     <th>Harga(ribuan Rp)</th>
+                    <th>Kondisi (B, KB, RB)</th>
                     <th>Keterangan</th>
                     <th style="width: 20px">Aksi</th>
                   </tr>

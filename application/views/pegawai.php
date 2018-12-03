@@ -36,6 +36,23 @@
                       <input type="text" class="form-control" id="password" placeholder="Golongan" name="pegawai_gol" required="required">
                   </div>
                   <div class="form-group">
+                    <label for="password">Jabatan</label>
+                      <input type="text" class="form-control" id="password" placeholder="Jabatan" name="pegawai_jabatan" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Pendidikan Terakhir</label>
+                              <select class="form-control" name="pegawai_pen" required="required">
+                                  <option value="">Pendidikan Terakhir</option>
+                                  <option type = "text" name = "" value = "SD / Sederajat">SD / Sederajat</option>
+                                  <option type = "text" name = "" value = "SLTP / Sederajat">SLTP / Sederajat</option>
+                                  <option type = "text" name = "" value = "SLTA / Sederajat">SLTA / Sederajat</option>
+                                  <option type = "text" name = "" value = "Diploma 3">Diploma 3</option>
+                                  <option type = "text" name = "" value = "Strata 1">Strata 1</option>
+                                  <option type = "text" name = "" value = "Strata 2">Strata 2</option>
+                                  <option type = "text" name = "" value = "Strata 3">Strata 3</option>
+                              </select>
+                            </div>
+                  <div class="form-group">
                     <label for="password">Kompetensi</label>
                               <select class="form-control" id="kompetensi" name="pegawai_kompetensi[]" multiple="multiple" style="width: 100%;" data-placeholder="Pilih" required="required">
 
@@ -96,7 +113,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Data Pegawai</h3>
             </div><!-- /.box-header -->
-            <div class="box-body">
+            <div class="box-body table-responsive">
               <table class="table table-bordered table-striped" id="example1">
                 <thead>
                   <tr>
@@ -104,6 +121,8 @@
                     <th>Nama</th>
                     <th>Nip</th>
                     <th>Golongan</th>
+                    <th>Jabatan</th>
+                    <th>Pendidikan Terakhir</th>
                     <th>Kompetensi</th>
                     <th>Pendidikan Formal</th>
                     <th>Pendidikan Fungsional</th>
@@ -124,6 +143,8 @@
                     <td><?php echo $key->pegawai_name;?></td>
                     <td><?php echo $key->pegawai_nip;?></td>
                     <td><?php echo $key->pegawai_gol;?></td>
+                    <td><?php echo $key->pegawai_jabatan;?></td>
+                    <td><?php echo $key->pegawai_pen;?></td>
                     <td><?php echo $key->pegawai_kompetensi;?></td>
                     <td><?php echo $key->pegawai_formal;?></td>
                     <td><?php echo $key->pegawai_fungsional;?></td>
@@ -159,6 +180,23 @@
                     <label for="password">Golongan</label>
                       <input type="text" class="form-control" id="password" value='<?php echo $key->pegawai_gol; ?>' name="pegawai_gol" required="required">
                   </div>
+                  <div class="form-group">
+                    <label for="password">Jabatan</label>
+                      <input type="text" class="form-control" id="password" value='<?php echo $key->pegawai_jabatan; ?>'name="pegawai_jabatan" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Pendidikan Terakhir</label>
+                              <select class="form-control" name="pegawai_pen" value='<?php echo $key->pegawai_pen; ?>' required="required">
+                                  <option value="">Pendidikan Terakhir</option>
+                                  <option type = "text" name = "" value = "SD / Sederajat">SD / Sederajat</option>
+                                  <option type = "text" name = "" value = "SLTP / Sederajat">SLTP / Sederajat</option>
+                                  <option type = "text" name = "" value = "SLTA / Sederajat">SLTA / Sederajat</option>
+                                  <option type = "text" name = "" value = "Diploma 3">Diploma 3</option>
+                                  <option type = "text" name = "" value = "Strata 1">Strata 1</option>
+                                  <option type = "text" name = "" value = "Strata 2">Strata 2</option>
+                                  <option type = "text" name = "" value = "Strata 3">Strata 3</option>
+                              </select>
+                            </div>
                   <div class="form-group">
                     <label for="password">Kompetensi</label>
                     <?php

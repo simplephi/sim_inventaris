@@ -1,12 +1,15 @@
   <div class="content-wrapper">
     <section class="content-header">
       <h1>
-      Kartu Inventaris Barang (KIB) F Konstruksi Dalam Pengerjaan
+      Kartu Inventaris Barang (KIB) C Gedung & Bangunan
       </h1>
       <br>
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" title="Tambah Data"><i class="fa fa-plus"></i> Tambah</button>
     <a href="<?php echo site_url('kibc')?>" class="btn btn-white btn-success btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Refresh Page">
                           <i class="fa fa-refresh"></i>
+                        </a>
+     <a href="<?php echo site_url('Kibc/cetak')?>" class="btn btn-white btn-warning btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Cetak">
+                          <i class="fa fa-print"></i> Cetak
                         </a>
       <!-- Modal Insert-->
       <div class="modal fade" id="myModal" role="dialog">
@@ -108,7 +111,7 @@
         <div class="col-md-12">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Kartu Inventaris Barang (KIB) F Konstruksi Dalam Pengerjaan</h3>
+              <h3 class="box-title">Kartu Inventaris Barang (KIB) C Gedung & Bangunan</h3>
             </div><!-- /.box-header -->
             <div class="box-body table-responsive">
               <table class="table table-bordered table-striped" id="example1">

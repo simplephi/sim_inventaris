@@ -26,16 +26,18 @@ table, td{
 <div class="box">
 
             <!-- /.box-header -->
-            <div class="box-body">
+            <div class="box-body table-responsive">
               <table class="table table-striped" border="1">
                 <tr>
                   <th>No.</th>
                   <th>Nama</th>
                   <th>NIP</th>
                   <th>Golongan</th>
-                  <th>Kompetensi</th>
-                  <th>Pendidikan Formal</th>
-                  <th>Pendidikan Fungsional</th>
+                  <th>Jabatan</th>
+                  <th>Pendidikan terakhir</th>
+                  <th style="width: 100px">Kompetensi</th>
+                  <th style="width: 140px">Pendidikan Formal</th>
+                  <th style="width: 160px">Pendidikan Fungsional</th>
                   <th>Foto</th>
 
                 </tr>
@@ -49,9 +51,11 @@ table, td{
                   <td><?php echo $key->pegawai_name;?></td>
                   <td><?php echo $key->pegawai_nip;?></td>
                   <td><?php echo $key->pegawai_gol;?></td>
-                  <td><?php echo $key->pegawai_kompetensi;?></td>
-                  <td><?php echo $key->pegawai_formal;?></td>
-                  <td><?php echo $key->pegawai_fungsional;?></td>
+                  <td><?php echo $key->pegawai_jabatan;?></td>
+                  <td><?php echo $key->pegawai_pen;?></td>
+                  <td style="width: 100px"><?php echo $key->pegawai_kompetensi;?></td>
+                  <td style="width: 140px"><?php echo $key->pegawai_formal;?></td>
+                  <td style="width: 160px"><?php echo $key->pegawai_fungsional;?></td>
                   <td><img src="<?php echo base_url()?>assets/pegawai/<?php echo $key->pegawai_file;?>" width="100" height="100"/></td>
                 </tr>
                 <?php

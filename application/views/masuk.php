@@ -8,6 +8,9 @@
     <a href="<?php echo site_url('masuk')?>" class="btn btn-white btn-success btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Refresh Page">
                           <i class="fa fa-refresh"></i>
                         </a>
+                        <a href="<?php echo site_url('Masuk/cetak')?>" class="btn btn-white btn-warning btn-bold tooltip-success" data-rel="tooltip" data-placement="top" title="Cetak">
+                          <i class="fa fa-print"></i> Cetak
+                        </a>
       <!-- Modal Insert-->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -44,6 +47,10 @@
                     <label for="password">Berkas</label>
                     <input type="file" class="form-control" id="password" placeholder="Berkas" name="masuk_berkas">
                   </div>
+                  <div class="form-group">
+                    <label for="password">Keterangan</label>
+                      <input type="text" class="form-control" id="password" placeholder="Keterangan" name="masuk_keterangan" required="required">
+                  </div>
 
                 </div><!-- /.box-body -->
                 <div class="box-footer">
@@ -73,6 +80,7 @@
                     <th>No. Surat</th>
                     <th>Perihal</th>
                     <th>Berkas</th>
+                    <th>Keterangan</th>
                     <th style="width: 120px">Aksi</th>
                   </tr>
                 </thead>
@@ -91,6 +99,7 @@
                     <td><?php echo $key->masuk_nomor;?></td>
                     <td><?php echo $key->masuk_perihal;?></td>
           <td><a href="<?php echo base_url()?>assets/masuk/<?php echo $key->masuk_berkas;?>"><?php echo $key->masuk_berkas;?></a></td>
+          <td><?php echo $key->masuk_keterangan;?></td>
                     <td>
 
                       <button type="button" class="btn btn-xs btn-success" title="Ubah Data" data-toggle="modal" data-target="#edit<?php echo $id;?>"><i class="fa fa-edit"></i></button>
@@ -133,6 +142,10 @@
               <div class="form-group">
                               <label for="password">Berkas</label>
                                 <input type="file" class="form-control" id="password" placeholder="Berkas"  name="masuk_berkas" >
+                            </div>
+                            <div class="form-group">
+                              <label for="password">Keterangan</label>
+                              <input type="text" class="form-control"  value='<?php echo $key->masuk_keterangan; ?>' name="masuk_keterangan" required="required">
                             </div>
                           </div><!-- /.box-body -->
                           <div class="box-footer">

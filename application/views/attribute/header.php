@@ -25,8 +25,8 @@
 <div class="wrapper">
   <header class="main-header">
     <a href="<?php echo base_url();?>" class="logo">
-      <span class="logo-mini"><b>S</b> Menyurat</span>
-      <span class="logo-lg"><b>Sistem Administrasi</b></span>
+      <span class="logo-mini"><b>S</b> Padu</span>
+      <span class="logo-lg"><b>SIPADU</b></span>
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">

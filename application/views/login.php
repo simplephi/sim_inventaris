@@ -23,7 +23,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php  echo base_url();   ?>">Sistem Informasi</a>
+    <a href="<?php  echo base_url();   ?>"><b>SIPADU</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

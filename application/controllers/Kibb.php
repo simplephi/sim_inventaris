@@ -75,5 +75,26 @@ public function input() {
         redirect('kibb');
 
     }
+                public function cetak(){
+    ob_start();
+    $data['kibb'] = $this->M_kibb->tampil_data_kibb();
+    $this->load->view('attribute/kibb', $data);
+    $html = ob_get_contents();
+        ob_end_clean();
+
+        require_once('./assets/html2pdf/html2pdf.class.php');
+    //Versi PHP 7.2
+    @$pdf = new HTML2PDF('L','F4','en');
+    @$pdf->WriteHTML($html);
+    @$pdf->Output('Data KIB B Peralatan & Mesin.pdf', 'D');
+
+/*
+    Versi PHP 7.1
+    $pdf = new HTML2PDF('L','F4','en');
+    $pdf->WriteHTML($html);
+    $pdf->Output('Data Pegawai.pdf', 'D');
+*/  
+    //ob_end_flush();
+  }
 }
 ?>
